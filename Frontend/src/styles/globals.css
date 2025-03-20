@@ -1,0 +1,36 @@
+/* //src /styles/globals.css */
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
+  a.hover\:bg-cream:hover {
+    background-color: #E1E4B7; /* Color de fondo al hacer hover */
+  }
+  .bg-navegator {
+    background-color: #2F4F4F; /* Color de fondo al hacer hover */
+  }
+
+  
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  .separator-container {
+    display: flex; /* Usamos flexbox para alinear los dos divs en una fila */
+    margin-top: 10px; /* Espacio entre el h3 y la barra */
+    position: relative; /* Necesario para posicionar el elemento hijo */
+  }
+  
+  
+  

@@ -1,0 +1,7633 @@
+[
+  {
+    "name": "Pattern1",
+    "sheetIndex": 1,
+    "primaryKeySheetIndex": 1,
+    "primaryKeyColumn": "M",
+    "baseStartRow": 191,
+    "basePrimaryKeyStartRow": 191,
+    "startRowIncrement": 59,
+    "primaryKeyStartRowIncrement": 59,
+    "names": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "baseDataStartRowBDA": [
+      4,
+      5,
+      4,
+      3
+    ],
+    "dataStartRowIncrementBDA": [
+      15,
+      18,
+      15,
+      5
+    ],
+    "baseDataStartRowBFE": [
+      4,
+      5,
+      4,
+      3
+    ],
+    "dataStartRowIncrementBFE": [
+      15,
+      18,
+      15,
+      5
+    ],
+    "defaultRowGap": [
+      2,
+      1,
+      2,
+      0
+    ],
+    "defaultTotalRows": [
+      12,
+      12,
+      12,
+      5
+    ],
+    "sourceWorkbook1Sheets": [
+      "Renovales",
+      "BN_Manejado",
+      "SNASPE",
+      "PF_PF"
+    ],
+    "sourceWorkbook2Sheets": [
+      "Incr_RENOVAL_ponderado",
+      "Incremento Bosques Naturales",
+      "Incr_SNASPE_ponderado",
+      "IMA_PF_ponderado"
+    ],
+    "sourceExtractColumns1Base": [
+      "C",
+      "D",
+      "C",
+      "G"
+    ],
+    "sourceExtractColumns2Base": [
+      "C",
+      "D",
+      "C",
+      "G"
+    ],
+    "useDirectRange": [
+      false,
+      true
+    ],
+    "directRangeStart": [
+      null,
+      "M3"
+    ],
+    "directRangeEnd": [
+      null,
+      "M14"
+    ],
+    "specialRowIndex": [
+      273,
+      null,
+      273,
+      null
+    ],
+    "specialRowIndexIncrement": [
+      15,
+      0,
+      15,
+      0
+    ],
+    "destinationColumns": [
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D",
+          "isSummed": true,
+          "specialCondition": true
+        },
+        {
+          "operationName": "workbookBFE",
+          "destinationColumn": "E"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "F",
+          "sourceSheetName": "Factores expansión_bosques",
+          "fixedCell": "C21"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "G",
+          "formula": "=E{row}*(1+F{row})"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "H",
+          "sourceSheetName": "Factores emisión",
+          "fixedCell": "B5"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": "=D{row}*G{row}*H{row}",
+          "isSummed": true,
+          "condicion": true,
+          "specialCondition": true
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "J",
+          "formula": "=(I{row} * {factorEmisionB12})/1000",
+          "isSummed": true,
+          "condicion": true,
+          "specialCondition": true
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D",
+          "isSummed": true
+        },
+        {
+          "operationName": "workbookBFE",
+          "destinationColumn": "E"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "F",
+          "sourceSheetName": "Factores expansión_bosques",
+          "fixedCell": "C21"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "G",
+          "formula": "=E{row}*(1+F{row})"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "H",
+          "sourceSheetName": "Factores emisión",
+          "fixedCell": "B5"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": "=D{row}*G{row}*H{row}",
+          "isSummed": true,
+          "condicion": true
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "J",
+          "formula": "=(I{row} * {factorEmisionB12})/1000",
+          "isSummed": true,
+          "condicion": true
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D",
+          "isSummed": true,
+          "specialCondition": true
+        },
+        {
+          "operationName": "workbookBFE",
+          "destinationColumn": "E"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "F",
+          "sourceSheetName": "Factores expansión_bosques",
+          "fixedCell": "C21"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "G",
+          "formula": "=E{row}*(1+F{row})"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "H",
+          "sourceSheetName": "Factores emisión",
+          "fixedCell": "B5"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": "=D{row}*G{row}*H{row}",
+          "isSummed": true,
+          "condicion": true,
+          "specialCondition": true
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "J",
+          "formula": "=(I{row} * {factorEmisionB12})/1000",
+          "isSummed": true,
+          "condicion": true,
+          "specialCondition": true
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D",
+          "isSummed": true
+        },
+        {
+          "operationName": "workbookBFE",
+          "destinationColumn": "E"
+        },
+        {
+          "operationName": "custom",
+          "destinationColumn": "F",
+          "sourceSheetName": "Factores expansión_bosques",
+          "cellsToExtract": [
+            "C22",
+            "C23",
+            "C25",
+            "C21"
+          ]
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "G",
+          "formula": "=E{row}*(1+F{row})"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "H",
+          "sourceSheetName": "Factores emisión",
+          "fixedCell": "B5"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": "=D{row}*G{row}*H{row}",
+          "isSummed": true,
+          "condicion": true
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "J",
+          "formula": "=(I{row} * {factorEmisionB12})/1000",
+          "isSummed": true,
+          "condicion": true
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Pattern10",
+    "sheetIndex": 10,
+    "primaryKeySheetIndex": 10,
+    "primaryKeyColumn": "O",
+    "baseStartRow": 100,
+    "basePrimaryKeyStartRow": 100,
+    "startRowIncrement": 45,
+    "primaryKeyStartRowIncrement": 45,
+    "names": [
+      "sec1",
+      "sec2",
+      "sec3",
+      "sec4",
+      "sec5",
+      "sec6"
+    ],
+    "baseDataStartRowBDA": [
+      4,
+      69,
+      69,
+      69,
+      216,
+      86
+    ],
+    "baseDataStartRowBFE": [
+      0,
+      41,
+      41,
+      41,
+      2,
+      2
+    ],
+    "defaultTotalRows": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "sourceWorkbook1Sheets": [
+      "Incendios",
+      "Incendios",
+      "Incendios",
+      "Incendios",
+      "Incendios",
+      "Quemas"
+    ],
+    "sourceWorkbook2Sheets": [
+      "Biomasa Stock_BN",
+      "Biomasa PF Incendiada",
+      "Biomasa PF Incendiada",
+      "Biomasa PF Incendiada",
+      "Biomasa_quema_residuos_forest",
+      "Biomasa_quema_residuos_forest"
+    ],
+    "sourceExtractColumns1Base": [
+      "D",
+      "D",
+      "D",
+      "D",
+      "D",
+      "D"
+    ],
+    "sourceExtractColumns2Base": [
+      "D",
+      "D",
+      "D",
+      "D",
+      "D",
+      "D"
+    ],
+    "useDirectRange": [
+      true,
+      false
+    ],
+    "directRangeStart": [
+      5
+    ],
+    "directRangeEnd": [
+      8
+    ],
+    "fixedRangePKboolBDA": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "specialRangePKBDA": [
+      22,
+      129,
+      129,
+      129,
+      234,
+      103
+    ],
+    "fixedRangePKboolBFE": [
+      false,
+      false,
+      true,
+      true
+    ],
+    "specialRangePKBFE": [
+      0,
+      98,
+      98,
+      98,
+      19,
+      19
+    ],
+    "destinationColumns": [
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "E",
+          "sourceSheetName": "Biomasa Stock_BN",
+          "fixedCell": "E6"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "F",
+          "sourceSheetName": "Factores emisión No-CO2",
+          "fixedCell": "E5"
+        },
+        {
+          "operationName": "custom",
+          "destinationColumn": "H",
+          "sourceSheetName": "Factores emisión No-CO2",
+          "cellsToExtract": [
+            "B5",
+            "B6",
+            "B7",
+            "B8"
+          ]
+        },
+        {
+          "operationName": "formula-diagonal",
+          "destinationColumn": "I",
+          "formula": "=(D{row}*E{row}*F{row}*H{row})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "workbookBFE",
+          "destinationColumn": "E"
+        },
+        {
+          "operationName": "customWorkbookBFE",
+          "destinationColumn": "F",
+          "sourceSheetName": "Factores emisión No-CO2",
+          "extractColumnBase": "D",
+          "dataStartRow": 33,
+          "fixedRangePKbool": true,
+          "specialRangePK": 50
+        },
+        {
+          "operationName": "custom",
+          "destinationColumn": "H",
+          "sourceSheetName": "Factores emisión No-CO2",
+          "cellsToExtract": [
+            "B5",
+            "B6",
+            "B7",
+            "B8"
+          ]
+        },
+        {
+          "operationName": "formula-diagonal",
+          "destinationColumn": "I",
+          "formula": "=(D{row}*E{row}*F{row}*H{row})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "workbookBFE",
+          "destinationColumn": "E"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "F",
+          "sourceSheetName": "Factores emisión No-CO2",
+          "fixedCell": "E17"
+        },
+        {
+          "operationName": "custom",
+          "destinationColumn": "H",
+          "sourceSheetName": "Factores emisión No-CO2",
+          "cellsToExtract": [
+            "B5",
+            "B6",
+            "B7",
+            "B8"
+          ]
+        },
+        {
+          "operationName": "formula-diagonal",
+          "destinationColumn": "I",
+          "formula": "=(D{row}*E{row}*F{row}*H{row})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "workbookBFE",
+          "destinationColumn": "E"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "F",
+          "sourceSheetName": "Factores emisión No-CO2",
+          "fixedCell": "E5"
+        },
+        {
+          "operationName": "custom",
+          "destinationColumn": "H",
+          "sourceSheetName": "Factores emisión No-CO2",
+          "cellsToExtract": [
+            "B5",
+            "B6",
+            "B7",
+            "B8"
+          ]
+        },
+        {
+          "operationName": "formula-diagonal",
+          "destinationColumn": "I",
+          "formula": "=(D{row}*E{row}*F{row}*H{row})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "workbookBFE",
+          "destinationColumn": "E"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "F",
+          "sourceSheetName": "Factores emisión No-CO2",
+          "fixedCell": "E5"
+        },
+        {
+          "operationName": "custom",
+          "destinationColumn": "H",
+          "sourceSheetName": "Factores emisión No-CO2",
+          "cellsToExtract": [
+            "B5",
+            "B6",
+            "B7",
+            "B8"
+          ]
+        },
+        {
+          "operationName": "formula-diagonal",
+          "destinationColumn": "I",
+          "formula": "=(D{row}*E{row}*F{row}*H{row})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "workbookBFE",
+          "destinationColumn": "E"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "F",
+          "sourceSheetName": "Factores emisión No-CO2",
+          "fixedCell": "E5"
+        },
+        {
+          "operationName": "custom",
+          "destinationColumn": "H",
+          "sourceSheetName": "Factores emisión No-CO2",
+          "cellsToExtract": [
+            "B5",
+            "B6",
+            "B7",
+            "B8"
+          ]
+        },
+        {
+          "operationName": "formula-diagonal",
+          "destinationColumn": "I",
+          "formula": "=(D{row}*E{row}*F{row}*H{row})/1000"
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Pattern13",
+    "sheetIndex": 13,
+    "primaryKeySheetIndex": 13,
+    "primaryKeyColumn": "M",
+    "baseStartRow": 130,
+    "basePrimaryKeyStartRow": 130,
+    "startRowIncrement": 40,
+    "primaryKeyStartRowIncrement": 40,
+    "names": [
+      "sec1",
+      "sec2",
+      "sec3",
+      "sec4",
+      "sec5",
+      "sec6",
+      "sec7",
+      "sec8",
+      "sec9",
+      "sec10"
+    ],
+    "baseDataStartRowBDA": [
+      3,
+      598,
+      3,
+      598,
+      3,
+      598,
+      3,
+      598,
+      3,
+      598
+    ],
+    "baseDataStartRowBFE": [
+      74,
+      219,
+      74,
+      219,
+      74,
+      219,
+      74,
+      219,
+      74,
+      219
+    ],
+    "defaultTotalRows": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "defaultRowGap": [
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0
+    ],
+    "sourceWorkbook1Sheets": [
+      "Tierratransicion-BN_DOM-Suelo",
+      "Tierras_transición_PF",
+      "Tierratransicion-BN_DOM-Suelo",
+      "Tierras_transición_PF",
+      "Tierratransicion-BN_DOM-Suelo",
+      "Tierras_transición_PF",
+      "Tierratransicion-BN_DOM-Suelo",
+      "Tierras_transición_PF",
+      "Tierratransicion-BN_DOM-Suelo",
+      "Tierras_transición_PF"
+    ],
+    "sourceWorkbook2Sheets": [
+      "DOM ",
+      "DOM ",
+      "DOM ",
+      "DOM ",
+      "DOM ",
+      "DOM ",
+      "DOM ",
+      "DOM ",
+      "DOM ",
+      "DOM "
+    ],
+    "sourceExtractColumns1Base": [
+      "D",
+      "G",
+      "D",
+      "G",
+      "D",
+      "G",
+      "D",
+      "G",
+      "D",
+      "G"
+    ],
+    "sourceExtractColumns2Base": [
+      "F",
+      "F",
+      "F",
+      "F",
+      "F",
+      "F",
+      "F",
+      "F",
+      "F",
+      "F"
+    ],
+    "fixedRangePKboolBDA": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "specialRangePKBDA": [
+      105,
+      694,
+      105,
+      694,
+      105,
+      694,
+      105,
+      694,
+      105,
+      694
+    ],
+    "fixedRangePKboolBFE": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "specialRangePKBFE": [
+      154,
+      315,
+      154,
+      315,
+      154,
+      315,
+      154,
+      315,
+      154,
+      315
+    ],
+    "destinationColumns": [
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "workbookBFE",
+          "destinationColumn": "E"
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "F",
+          "manualValue": 0
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "G",
+          "manualValue": 20
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "H",
+          "formula": "=(D{row}*(E{row}-F{row}))/G{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": "=(H{row} * {factorEmisionB12})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "workbookBFE",
+          "destinationColumn": "E"
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "F",
+          "manualValue": 0
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "G",
+          "manualValue": 20
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "H",
+          "formula": "=(D{row}*(E{row}-F{row}))/G{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": "=(H{row} * {factorEmisionB12})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "workbookBFE",
+          "destinationColumn": "E"
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "F",
+          "manualValue": 0
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "G",
+          "manualValue": 20
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "H",
+          "formula": "=(D{row}*(E{row}-F{row}))/G{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": "=(H{row} * {factorEmisionB12})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "workbookBFE",
+          "destinationColumn": "E"
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "F",
+          "manualValue": 0
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "G",
+          "manualValue": 20
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "H",
+          "formula": "=(D{row}*(E{row}-F{row}))/G{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": "=(H{row} * {factorEmisionB12})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "workbookBFE",
+          "destinationColumn": "E"
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "F",
+          "manualValue": 0
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "G",
+          "manualValue": 20
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "H",
+          "formula": "=(D{row}*(E{row}-F{row}))/G{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": "=(H{row} * {factorEmisionB12})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "workbookBFE",
+          "destinationColumn": "E"
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "F",
+          "manualValue": 0
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "G",
+          "manualValue": 20
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "H",
+          "formula": "=(D{row}*(E{row}-F{row}))/G{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": "=(H{row} * {factorEmisionB12})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "workbookBFE",
+          "destinationColumn": "E"
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "F",
+          "manualValue": 0
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "G",
+          "manualValue": 20
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "H",
+          "formula": "=(D{row}*(E{row}-F{row}))/G{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": "=(H{row} * {factorEmisionB12})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "workbookBFE",
+          "destinationColumn": "E"
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "F",
+          "manualValue": 0
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "G",
+          "manualValue": 20
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "H",
+          "formula": "=(D{row}*(E{row}-F{row}))/G{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": "=(H{row} * {factorEmisionB12})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "workbookBFE",
+          "destinationColumn": "E"
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "F",
+          "manualValue": 0
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "G",
+          "manualValue": 20
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "H",
+          "formula": "=(D{row}*(E{row}-F{row}))/G{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": "=(H{row} * {factorEmisionB12})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "workbookBFE",
+          "destinationColumn": "E"
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "F",
+          "manualValue": 0
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "G",
+          "manualValue": 20
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "H",
+          "formula": "=(D{row}*(E{row}-F{row}))/G{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": "=(H{row} * {factorEmisionB12})/1000"
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Pattern14",
+    "sheetIndex": 14,
+    "primaryKeySheetIndex": 14,
+    "primaryKeyColumn": "R",
+    "baseStartRow": 147,
+    "basePrimaryKeyStartRow": 147,
+    "startRowIncrement": 45,
+    "primaryKeyStartRowIncrement": 45,
+    "names": [
+      "sec1",
+      "sec2",
+      "sec3",
+      "sec4",
+      "sec5",
+      "sec6",
+      "sec7",
+      "sec8",
+      "sec9",
+      "sec10"
+    ],
+    "baseDataStartRowBDA": [
+      3,
+      598,
+      3,
+      598,
+      3,
+      598,
+      3,
+      598,
+      3,
+      598
+    ],
+    "baseDataStartRowBFE": [
+      74,
+      219,
+      74,
+      219,
+      74,
+      219,
+      74,
+      219,
+      74,
+      219
+    ],
+    "defaultTotalRows": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "defaultRowGap": [
+      0,
+      2,
+      0,
+      2,
+      0,
+      2,
+      0,
+      2,
+      0,
+      0
+    ],
+    "sourceWorkbook1Sheets": [
+      "Tierratransicion-BN_DOM-Suelo",
+      "Tierras_transición_PF",
+      "Tierratransicion-BN_DOM-Suelo",
+      "Tierras_transición_PF",
+      "Tierratransicion-BN_DOM-Suelo",
+      "Tierras_transición_PF",
+      "Tierratransicion-BN_DOM-Suelo",
+      "Tierras_transición_PF",
+      "Tierratransicion-BN_DOM-Suelo",
+      "Tierras_transición_PF"
+    ],
+    "sourceWorkbook2Sheets": [
+      "Carbono del suelo",
+      "Carbono del suelo",
+      "Carbono del suelo",
+      "Carbono del suelo",
+      "Carbono del suelo",
+      "Carbono del suelo",
+      "Carbono del suelo",
+      "Carbono del suelo",
+      "Carbono del suelo",
+      "Carbono del suelo"
+    ],
+    "sourceExtractColumns1Base": [
+      "D",
+      "G",
+      "D",
+      "G",
+      "D",
+      "G",
+      "D",
+      "G",
+      "D",
+      "G"
+    ],
+    "sourceExtractColumns2Base": [
+      "F",
+      "F",
+      "F",
+      "F",
+      "F",
+      "F",
+      "F",
+      "F",
+      "F",
+      "F"
+    ],
+    "fixedRangePKboolBDA": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "specialRangePKBDA": [
+      105,
+      694,
+      105,
+      694,
+      105,
+      694,
+      105,
+      694,
+      105,
+      694
+    ],
+    "fixedRangePKboolBFE": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "specialRangePKBFE": [
+      154,
+      315,
+      154,
+      315,
+      154,
+      315,
+      154,
+      315,
+      154,
+      315
+    ],
+    "destinationColumns": [
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "E",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "K{2}"
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "F",
+          "manualValue": 20
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "G",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "B{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "H",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "C{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "I",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "D{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "J",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "H{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "K",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "I{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "L",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "J{45}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "M",
+          "formula": "=((E{row}*G{row}*H{row}*I{row}*D{row})-(E{row}*J{row}*K{row}*L{row}*D{row}))/F{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "N",
+          "formula": "=(M{row} * {factorEmisionB12})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "E",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "K{2}"
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "F",
+          "manualValue": 20
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "G",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "E{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "H",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "F{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "I",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "G{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "J",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "H{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "K",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "I{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "L",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "J{45}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "M",
+          "formula": "=((E{row}*G{row}*H{row}*I{row}*D{row})-(E{row}*J{row}*K{row}*L{row}*D{row}))/F{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "N",
+          "formula": "=(M{row} * {factorEmisionB12})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "E",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "K{2}"
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "F",
+          "manualValue": 20
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "G",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "B{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "H",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "C{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "I",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "D{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "J",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "K{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "K",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "L{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "L",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "M{45}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "M",
+          "formula": "=((E{row}*G{row}*H{row}*I{row}*D{row})-(E{row}*J{row}*K{row}*L{row}*D{row}))/F{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "N",
+          "formula": "=(M{row} * {factorEmisionB12})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "E",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "K{2}"
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "F",
+          "manualValue": 20
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "G",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "E{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "H",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "F{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "I",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "G{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "J",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "K{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "K",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "L{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "L",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "M{45}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "M",
+          "formula": "=((E{row}*G{row}*H{row}*I{row}*D{row})-(E{row}*J{row}*K{row}*L{row}*D{row}))/F{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "N",
+          "formula": "=(M{row} * {factorEmisionB12})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "E",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "K{2}"
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "F",
+          "manualValue": 20
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "G",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "B{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "H",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "C{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "I",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "D{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "J",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "N{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "K",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "O{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "L",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "P{45}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "M",
+          "formula": "=((E{row}*G{row}*H{row}*I{row}*D{row})-(E{row}*J{row}*K{row}*L{row}*D{row}))/F{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "N",
+          "formula": "=(M{row} * {factorEmisionB12})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "E",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "K{2}"
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "F",
+          "manualValue": 20
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "G",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "E{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "H",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "F{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "I",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "G{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "J",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "N{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "K",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "O{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "L",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "P{45}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "M",
+          "formula": "=((E{row}*G{row}*H{row}*I{row}*D{row})-(E{row}*J{row}*K{row}*L{row}*D{row}))/F{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "N",
+          "formula": "=(M{row} * {factorEmisionB12})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "E",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "K{2}"
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "F",
+          "manualValue": 20
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "G",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "B{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "H",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "C{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "I",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "D{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "J",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "Q{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "K",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "R{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "L",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "S{45}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "M",
+          "formula": "=((E{row}*G{row}*H{row}*I{row}*D{row})-(E{row}*J{row}*K{row}*L{row}*D{row}))/F{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "N",
+          "formula": "=(M{row} * {factorEmisionB12})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "E",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "K{2}"
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "F",
+          "manualValue": 20
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "G",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "E{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "H",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "F{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "I",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "G{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "J",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "Q{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "K",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "R{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "L",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "S{45}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "M",
+          "formula": "=((E{row}*G{row}*H{row}*I{row}*D{row})-(E{row}*J{row}*K{row}*L{row}*D{row}))/F{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "N",
+          "formula": "=(M{row} * {factorEmisionB12})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "E",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "K{2}"
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "F",
+          "manualValue": 20
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "G",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "B{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "H",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "C{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "I",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "D{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "J",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "T{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "K",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "U{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "L",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "V{45}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "M",
+          "formula": "=((E{row}*G{row}*H{row}*I{row}*D{row})-(E{row}*J{row}*K{row}*L{row}*D{row}))/F{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "N",
+          "formula": "=(M{row} * {factorEmisionB12})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "E",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "K{2}"
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "F",
+          "manualValue": 20
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "G",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "E{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "H",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "F{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "I",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "G{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "J",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "T{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "K",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "U{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "L",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "V{45}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "M",
+          "formula": "=((E{row}*G{row}*H{row}*I{row}*D{row})-(E{row}*J{row}*K{row}*L{row}*D{row}))/F{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "N",
+          "formula": "=(M{row} * {factorEmisionB12})/1000"
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Pattern17",
+    "sheetIndex": 17,
+    "primaryKeySheetIndex": 17,
+    "primaryKeyColumn": "K",
+    "baseStartRow": 105,
+    "basePrimaryKeyStartRow": 105,
+    "startRowIncrement": 31,
+    "primaryKeyStartRowIncrement": 31,
+    "names": [
+      "X"
+    ],
+    "baseDataStartRowBDA": [
+      3
+    ],
+    "dataStartRowIncrementBDA": [
+      48
+    ],
+    "baseDataStartRowBFE": [
+      3
+    ],
+    "dataStartRowIncrementBFE": [
+      48
+    ],
+    "defaultRowGap": [
+      0
+    ],
+    "defaultTotalRows": [
+      3
+    ],
+    "sourceWorkbook1Sheets": [
+      "Superficie_CL_perennes"
+    ],
+    "sourceWorkbook2Sheets": [
+      "Biomasa_CL_Perenne"
+    ],
+    "sourceExtractColumns1Base": [
+      "F"
+    ],
+    "sourceExtractColumns2Base": [
+      "F"
+    ],
+    "useDirectRange": [
+      false
+    ],
+    "directRangeStart": [
+      null
+    ],
+    "directRangeEnd": [
+      null
+    ],
+    "specialRowIndex": [
+      null
+    ],
+    "specialRowIndexIncrement": [
+      0
+    ],
+    "fixedRangePKboolBDA": [
+      true
+    ],
+    "specialRangePKBDA": [
+      50
+    ],
+    "fixedRangePKboolBFE": [
+      true
+    ],
+    "specialRangePKBFE": [
+      51
+    ],
+    "destinationColumns": [
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D",
+          "isSummed": false,
+          "condicion": false
+        },
+        {
+          "operationName": "workbookBFE",
+          "destinationColumn": "E"
+        },
+        {
+          "operationName": "customWorkbookBFE",
+          "destinationColumn": "F",
+          "searchColumn": "A",
+          "sourceSheetName": "Biomasa_CL_Perenne",
+          "extractColumnBase": "F",
+          "dataStartRow": 54,
+          "fixedRangePKbool": true,
+          "specialRangePK": 102
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "G",
+          "formula": "=((E{row}-F{row})*D{row})",
+          "isSummed": true,
+          "condicion": true
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "H",
+          "formula": "=(G{row} * {factorEmisionB12})/1000",
+          "isSummed": true,
+          "condicion": true
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Pattern2",
+    "sheetIndex": 2,
+    "primaryKeySheetIndex": 2,
+    "primaryKeyColumn": "L",
+    "baseStartRow": 74,
+    "basePrimaryKeyStartRow": 74,
+    "startRowIncrement": 20,
+    "primaryKeyStartRowIncrement": 20,
+    "names": [
+      "Y"
+    ],
+    "baseDataStartRowBDA": [
+      4
+    ],
+    "defaultRowGap": [
+      0
+    ],
+    "defaultTotalRows": [
+      4
+    ],
+    "sourceWorkbook1Sheets": [
+      "Cosecha_trozas"
+    ],
+    "sourceWorkbook2Sheets": [
+      "Factores expansión_bosques"
+    ],
+    "sourceExtractColumns1Base": [
+      "D"
+    ],
+    "sourceExtractColumns2Base": [
+      "D"
+    ],
+    "useDirectRange": [
+      true
+    ],
+    "directRangeStart": [
+      "F5"
+    ],
+    "directRangeEnd": [
+      "F8"
+    ],
+    "specialRowIndex": [
+      null
+    ],
+    "specialRowIndexIncrement": [
+      0
+    ],
+    "fixedRangePKboolBDA": [
+      true
+    ],
+    "specialRangePKBDA": [
+      83
+    ],
+    "destinationColumns": [
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D",
+          "isSummed": true,
+          "condicion": false
+        },
+        {
+          "operationName": "workbookBFE",
+          "destinationColumn": "E"
+        },
+        {
+          "operationName": "custom",
+          "destinationColumn": "F",
+          "sourceSheetName": "Factores expansión_bosques",
+          "cellsToExtract": [
+            "C22",
+            "C23",
+            "C25",
+            "C21"
+          ]
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "G",
+          "sourceSheetName": "Factores emisión",
+          "fixedCell": "B5"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "H",
+          "formula": "=(D{row}*E{row}*(1+F{row})*G{row})*-1",
+          "isSummed": true,
+          "condicion": true
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": "=(H{row} * {factorEmisionB12})/1000",
+          "isSummed": true,
+          "condicion": true
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Pattern20",
+    "sheetIndex": 20,
+    "primaryKeySheetIndex": 20,
+    "primaryKeyColumn": "O",
+    "baseStartRow": 74,
+    "basePrimaryKeyStartRow": 75,
+    "startRowIncrement": 30,
+    "primaryKeyStartRowIncrement": 30,
+    "names": [
+      "X"
+    ],
+    "baseDataStartRowBDA": [
+      3
+    ],
+    "baseDataStartRowBFE": [
+      24
+    ],
+    "defaultRowGap": [
+      0
+    ],
+    "defaultTotalRows": [
+      4
+    ],
+    "sourceWorkbook1Sheets": [
+      "Superf_Incendios_CL"
+    ],
+    "sourceWorkbook2Sheets": [
+      "Factores emisión No-CO2"
+    ],
+    "sourceExtractColumns1Base": [
+      "D"
+    ],
+    "sourceExtractColumns2Base": [
+      "D"
+    ],
+    "useDirectRange": [
+      false
+    ],
+    "directRangeStart": [
+      null
+    ],
+    "directRangeEnd": [
+      null
+    ],
+    "specialRowIndex": [
+      null
+    ],
+    "specialRowIndexIncrement": [
+      0
+    ],
+    "fixedRangePKboolBDA": [
+      true
+    ],
+    "specialRangePKBDA": [
+      18
+    ],
+    "fixedRangePKboolBFE": [
+      true
+    ],
+    "specialRangePKBFE": [
+      5
+    ],
+    "destinationColumns": [
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D",
+          "isSummed": false,
+          "condicion": false
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "E",
+          "sourceSheetName": "Stock_Otras Tierras",
+          "fixedCell": "K4"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "F",
+          "sourceSheetName": "Factores emisión No-CO2",
+          "fixedCell": "E9"
+        },
+        {
+          "operationName": "custom",
+          "destinationColumn": "H",
+          "sourceSheetName": "Factores emisión No-CO2",
+          "cellsToExtract": [
+            "B24",
+            "B25",
+            "B26",
+            "B27"
+          ]
+        },
+        {
+          "operationName": "formula-diagonal",
+          "destinationColumn": "I",
+          "formula": "=(D{row}*E{row}*F{row}*H{row})/1000"
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Pattern21",
+    "sheetIndex": 21,
+    "primaryKeySheetIndex": 21,
+    "primaryKeyColumn": "M",
+    "baseStartRow": 124,
+    "basePrimaryKeyStartRow": 124,
+    "startRowIncrement": 37,
+    "primaryKeyStartRowIncrement": 37,
+    "names": [
+      "X",
+      "Y",
+      "Z",
+      "W",
+      "A"
+    ],
+    "baseDataStartRowBDA": [
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "baseDataStartRowBFE": [
+      102,
+      102,
+      102,
+      102,
+      102
+    ],
+    "defaultRowGap": [
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "defaultTotalRows": [
+      2,
+      1,
+      1,
+      1,
+      1
+    ],
+    "sourceWorkbook1Sheets": [
+      "Superficie_ Tierras convert CL",
+      "Superficie_ Tierras convert CL",
+      "Superficie_ Tierras convert CL",
+      "Superficie_ Tierras convert CL",
+      "Superficie_ Tierras convert CL"
+    ],
+    "sourceWorkbook2Sheets": [
+      "Biomasa Stock_BN",
+      "Stock_Otras Tierras",
+      "Stock_Otras Tierras",
+      "Stock_Otras Tierras",
+      "Stock_Otras Tierras"
+    ],
+    "sourceExtractColumns1Base": [
+      "D",
+      "D",
+      "D",
+      "D",
+      "D"
+    ],
+    "sourceExtractColumns2Base": [
+      "D",
+      "D",
+      "D",
+      "D",
+      "D"
+    ],
+    "useDirectRange": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "specialRowIndex": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "specialRowIndexIncrement": [
+      0
+    ],
+    "fixedRangePKboolBDA": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "specialRangePKBDA": [
+      943,
+      943,
+      943,
+      943,
+      943
+    ],
+    "fixedRangePKboolBFE": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "specialRangePKBFE": [
+      140,
+      140,
+      140,
+      140,
+      140
+    ],
+    "destinationColumns": [
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D",
+          "specialCondition": true
+        },
+        {
+          "operationName": "workbookBFE",
+          "destinationColumn": "E"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "F",
+          "sourceSheetName": "Factores emisión",
+          "fixedCell": "B5"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": " =G{row}+((0-E{row})*D{row})*F{row}-H{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "J",
+          "formula": "=(I{row} * {factorEmisionB12})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D",
+          "specialCondition": true
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "E",
+          "sourceSheetName": "Stock_Otras Tierras",
+          "fixedCell": "G{16}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "F",
+          "sourceSheetName": "Factores emisión",
+          "fixedCell": "B6"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": " =G{row}+((0-E{row})*D{row})*F{row}-H{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "J",
+          "formula": "=(I{row} * {factorEmisionB12})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D",
+          "specialCondition": true
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "E",
+          "sourceSheetName": "Stock_Otras Tierras",
+          "fixedCell": "J31"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "F",
+          "sourceSheetName": "Factores emisión",
+          "fixedCell": "B6"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": " =G{row}+((0-E{row})*D{row})*F{row}-H{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "J",
+          "formula": "=(I{row} * {factorEmisionB12})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D",
+          "specialCondition": true
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "E",
+          "sourceSheetName": "Stock_Otras Tierras",
+          "fixedCell": "M31"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "F",
+          "sourceSheetName": "Factores emisión",
+          "fixedCell": "B6"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": " =G{row}+((0-E{row})*D{row})*F{row}-H{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "J",
+          "formula": "=(I{row} * {factorEmisionB12})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D",
+          "specialCondition": true
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "E",
+          "sourceSheetName": "Stock_Otras Tierras",
+          "fixedCell": "P31"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "F",
+          "sourceSheetName": "Factores emisión",
+          "fixedCell": "B6"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": " =G{row}+((0-E{row})*D{row})*F{row}-H{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "J",
+          "formula": "=(I{row} * {factorEmisionB12})/1000"
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Pattern22",
+    "sheetIndex": 22,
+    "primaryKeySheetIndex": 22,
+    "primaryKeyColumn": "M",
+    "baseStartRow": 126,
+    "basePrimaryKeyStartRow": 126,
+    "startRowIncrement": 38,
+    "primaryKeyStartRowIncrement": 38,
+    "names": [
+      "X",
+      "Y",
+      "Z",
+      "W",
+      "A"
+    ],
+    "baseDataStartRowBDA": [
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "baseDataStartRowBFE": [
+      157,
+      157,
+      157,
+      157,
+      157
+    ],
+    "defaultRowGap": [
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "defaultTotalRows": [
+      2,
+      1,
+      1,
+      1,
+      1
+    ],
+    "sourceWorkbook1Sheets": [
+      "Superficie_ Tierras convert CL",
+      "Superficie_ Tierras convert CL",
+      "Superficie_ Tierras convert CL",
+      "Superficie_ Tierras convert CL",
+      "Superficie_ Tierras convert CL"
+    ],
+    "sourceWorkbook2Sheets": [
+      "DOM ",
+      "DOM ",
+      "DOM ",
+      "DOM ",
+      "DOM "
+    ],
+    "sourceExtractColumns1Base": [
+      "D",
+      "D",
+      "D",
+      "D",
+      "D"
+    ],
+    "sourceExtractColumns2Base": [
+      "F",
+      "F",
+      "F",
+      "F",
+      "F"
+    ],
+    "useDirectRange": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "specialRowIndex": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "specialRowIndexIncrement": [
+      0
+    ],
+    "fixedRangePKboolBDA": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "specialRangePKBDA": [
+      681,
+      681,
+      681,
+      681,
+      681
+    ],
+    "fixedRangePKboolBFE": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "specialRangePKBFE": [
+      174,
+      174,
+      174,
+      174,
+      174
+    ],
+    "destinationColumns": [
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D",
+          "specialCondition": true
+        },
+        {
+          "operationName": "customWorkbookBFE",
+          "destinationColumn": "E",
+          "searchColumn": "C",
+          "sourceSheetName": "DOM ",
+          "extractColumnBase": "F",
+          "dataStartRow": 157,
+          "fixedRangePKbool": true,
+          "specialRangePK": 174
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "F",
+          "manualValue": 0,
+          "specialCondition": true
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "G",
+          "manualValue": 1,
+          "specialCondition": true
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "H",
+          "formula": " =(D{row}*(F{row}-E{row})/G{row})"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": "=(H{row} * {factorEmisionB12})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D",
+          "specialCondition": true
+        },
+        {
+          "operationName": "customWorkbookBFE",
+          "destinationColumn": "E",
+          "searchColumn": "C",
+          "sourceSheetName": "DOM ",
+          "extractColumnBase": "F",
+          "dataStartRow": 157,
+          "fixedRangePKbool": true,
+          "specialRangePK": 174
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "F",
+          "manualValue": 0
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "G",
+          "manualValue": 1
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "H",
+          "formula": " =(D{row}*(F{row}-E{row})/G{row})"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": "=D{row}*(F{row}-E{row})/G{row}"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D",
+          "specialCondition": true
+        },
+        {
+          "operationName": "customWorkbookBFE",
+          "destinationColumn": "E",
+          "searchColumn": "C",
+          "sourceSheetName": "DOM ",
+          "extractColumnBase": "F",
+          "dataStartRow": 157,
+          "fixedRangePKbool": true,
+          "specialRangePK": 174
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "F",
+          "manualValue": 0
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "G",
+          "manualValue": 1
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "H",
+          "formula": " =(D{row}*(F{row}-E{row})/G{row})"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": "=D{row}*(F{row}-E{row})/G{row}"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D",
+          "specialCondition": true
+        },
+        {
+          "operationName": "customWorkbookBFE",
+          "destinationColumn": "E",
+          "searchColumn": "C",
+          "sourceSheetName": "DOM ",
+          "extractColumnBase": "F",
+          "dataStartRow": 157,
+          "fixedRangePKbool": true,
+          "specialRangePK": 174
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "F",
+          "manualValue": 0
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "G",
+          "manualValue": 1
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "H",
+          "formula": " =(D{row}*(F{row}-E{row})/G{row})"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": "=D{row}*(F{row}-E{row})/G{row}"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D",
+          "specialCondition": true
+        },
+        {
+          "operationName": "customWorkbookBFE",
+          "destinationColumn": "E",
+          "searchColumn": "C",
+          "sourceSheetName": "DOM ",
+          "extractColumnBase": "F",
+          "dataStartRow": 157,
+          "fixedRangePKbool": true,
+          "specialRangePK": 174
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "F",
+          "manualValue": 0
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "G",
+          "manualValue": 1
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "H",
+          "formula": " =(D{row}*(F{row}-E{row})/G{row})"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": "=D{row}*(F{row}-E{row})/G{row}"
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Pattern23",
+    "sheetIndex": 23,
+    "primaryKeySheetIndex": 23,
+    "primaryKeyColumn": "Q",
+    "baseStartRow": 141,
+    "basePrimaryKeyStartRow": 141,
+    "startRowIncrement": 40,
+    "primaryKeyStartRowIncrement": 40,
+    "names": [
+      "B",
+      "X",
+      "Y",
+      "Z",
+      "W",
+      "A"
+    ],
+    "baseDataStartRowBDA": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "baseDataStartRowBFE": [
+      157,
+      157,
+      157,
+      157,
+      157,
+      157
+    ],
+    "defaultRowGap": [
+      0,
+      1,
+      2,
+      2,
+      2,
+      2
+    ],
+    "defaultTotalRows": [
+      1,
+      2,
+      1,
+      1,
+      1,
+      1
+    ],
+    "sourceWorkbook1Sheets": [
+      "Superficie_ Tierras convert CL",
+      "Superficie_ Tierras convert CL",
+      "Superficie_ Tierras convert CL",
+      "Superficie_ Tierras convert CL",
+      "Superficie_ Tierras convert CL",
+      "Superficie_ Tierras convert CL"
+    ],
+    "sourceWorkbook2Sheets": [
+      "Carbono del suelo",
+      "Carbono del suelo",
+      "Carbono del suelo",
+      "Carbono del suelo",
+      "Carbono del suelo",
+      "Carbono del suelo"
+    ],
+    "sourceExtractColumns1Base": [
+      "D",
+      "D",
+      "D",
+      "D",
+      "D",
+      "D"
+    ],
+    "sourceExtractColumns2Base": [
+      "F",
+      "F",
+      "F",
+      "F",
+      "F",
+      "F"
+    ],
+    "useDirectRange": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "specialRowIndex": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "specialRowIndexIncrement": [
+      0
+    ],
+    "fixedRangePKboolBDA": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "specialRangePKBDA": [
+      682,
+      682,
+      682,
+      682,
+      682,
+      682
+    ],
+    "fixedRangePKboolBFE": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "specialRangePKBFE": [
+      174,
+      174,
+      174,
+      174,
+      174,
+      174
+    ],
+    "destinationColumns": [
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D",
+          "specialCondition": true
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "E",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "K{2}"
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "F",
+          "manualValue": 20
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "G",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "H{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "H",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "I{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "I",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "J{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "J",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "B85"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "K",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "C45"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "L",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "D45"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "M",
+          "formula": "=((D{row}*E{row}*G{row}*H{row}*I{row})-(D{row}*E{row}*J{row}*K{row}*L{row}))/F{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "N",
+          "formula": "=(M{row} * {factorEmisionB12})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D",
+          "specialCondition": true
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "E",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "K{2}"
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "F",
+          "manualValue": 20
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "G",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "H{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "H",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "I{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "I",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "J{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "J",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "B86"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "K",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "C46"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "L",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "D46"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "M",
+          "formula": "=((D{row}*E{row}*G{row}*H{row}*I{row})-(D{row}*E{row}*J{row}*K{row}*L{row}))/F{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "N",
+          "formula": "=(M{row} * {factorEmisionB12})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D",
+          "specialCondition": true
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "E",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "K{2}"
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "F",
+          "manualValue": 20
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "G",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "H{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "H",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "I{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "I",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "J{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "J",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "B87"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "K",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "C47"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "L",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "D47"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "M",
+          "formula": "=((D{row}*E{row}*G{row}*H{row}*I{row})-(D{row}*E{row}*J{row}*K{row}*L{row}))/F{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "N",
+          "formula": "=(M{row} * {factorEmisionB12})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D",
+          "specialCondition": true
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "E",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "K{2}"
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "F",
+          "manualValue": 20
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "G",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "H{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "H",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "I{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "I",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "J{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "J",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "N{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "K",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "O{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "L",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "P{45}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "M",
+          "formula": "=((D{row}*E{row}*G{row}*H{row}*I{row})-(D{row}*E{row}*J{row}*K{row}*L{row}))/F{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "N",
+          "formula": "=(M{row} * {factorEmisionB12})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D",
+          "specialCondition": true
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "E",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "K{2}"
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "F",
+          "manualValue": 20
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "G",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "H{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "H",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "I{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "I",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "J{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "J",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "B88"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "K",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "C88"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "L",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "D88"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "M",
+          "formula": "=((D{row}*E{row}*G{row}*H{row}*I{row})-(D{row}*E{row}*J{row}*K{row}*L{row}))/F{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "N",
+          "formula": "=(M{row} * {factorEmisionB12})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D",
+          "specialCondition": true
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "E",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "K{2}"
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "F",
+          "manualValue": 20
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "G",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "H{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "H",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "I{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "I",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "J{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "J",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "T{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "K",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "U{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "L",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "V{45}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "M",
+          "formula": "=((D{row}*E{row}*G{row}*H{row}*I{row})-(D{row}*E{row}*J{row}*K{row}*L{row}))/F{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "N",
+          "formula": "=(M{row} * {factorEmisionB12})/1000"
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Pattern28",
+    "sheetIndex": 28,
+    "primaryKeySheetIndex": 28,
+    "primaryKeyColumn": "O",
+    "baseStartRow": 74,
+    "basePrimaryKeyStartRow": 75,
+    "startRowIncrement": 30,
+    "primaryKeyStartRowIncrement": 30,
+    "names": [
+      "X",
+      "Y"
+    ],
+    "baseDataStartRowBDA": [
+      23,
+      23
+    ],
+    "baseDataStartRowBFE": [
+      24,
+      24
+    ],
+    "defaultRowGap": [
+      0
+    ],
+    "defaultTotalRows": [
+      4,
+      4
+    ],
+    "sourceWorkbook1Sheets": [
+      "Superficie Incendio GL",
+      "Superficie Incendio GL"
+    ],
+    "sourceWorkbook2Sheets": [
+      "Stock_Otras Tierras",
+      "Stock_Otras Tierras"
+    ],
+    "sourceExtractColumns1Base": [
+      "D",
+      "D"
+    ],
+    "sourceExtractColumns2Base": [
+      "D",
+      "D"
+    ],
+    "useDirectRange": [
+      false
+    ],
+    "directRangeStart": [
+      null,
+      null
+    ],
+    "directRangeEnd": [
+      null,
+      null
+    ],
+    "specialRowIndex": [
+      null,
+      null
+    ],
+    "specialRowIndexIncrement": [
+      0
+    ],
+    "fixedRangePKboolBDA": [
+      true,
+      true
+    ],
+    "specialRangePKBDA": [
+      60,
+      60
+    ],
+    "fixedRangePKboolBFE": [
+      true,
+      true
+    ],
+    "specialRangePKBFE": [
+      5,
+      5
+    ],
+    "destinationColumns": [
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D",
+          "isSummed": false,
+          "condicion": false
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "E",
+          "sourceSheetName": "Stock_Otras Tierras",
+          "fixedCell": "B36"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "F",
+          "sourceSheetName": "Factores emisión No-CO2",
+          "fixedCell": "E7"
+        },
+        {
+          "operationName": "custom",
+          "destinationColumn": "H",
+          "sourceSheetName": "Factores emisión No-CO2",
+          "cellsToExtract": [
+            "B15",
+            "B16",
+            "B17",
+            "B18"
+          ]
+        },
+        {
+          "operationName": "formula-diagonal",
+          "destinationColumn": "I",
+          "formula": "=(D{row}*E{row}*F{row}*H{row})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D",
+          "isSummed": false,
+          "condicion": false
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "E",
+          "sourceSheetName": "Stock_Otras Tierras",
+          "fixedCell": "E{16}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "F",
+          "sourceSheetName": "Factores emisión No-CO2",
+          "fixedCell": "E8"
+        },
+        {
+          "operationName": "custom",
+          "destinationColumn": "H",
+          "sourceSheetName": "Factores emisión No-CO2",
+          "cellsToExtract": [
+            "B15",
+            "B16",
+            "B17",
+            "B18"
+          ]
+        },
+        {
+          "operationName": "formula-diagonal",
+          "destinationColumn": "I",
+          "formula": "=(D{row}*E{row}*F{row}*H{row})/1000"
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Pattern29",
+    "sheetIndex": 29,
+    "primaryKeySheetIndex": 29,
+    "primaryKeyColumn": "O",
+    "baseStartRow": 125,
+    "basePrimaryKeyStartRow": 125,
+    "startRowIncrement": 37,
+    "primaryKeyStartRowIncrement": 37,
+    "names": [
+      "sec1",
+      "sec2",
+      "sec3",
+      "sec4",
+      "sec5"
+    ],
+    "baseDataStartRowBDA": [
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "baseDataStartRowBFE": [
+      145,
+      145,
+      145,
+      145,
+      145
+    ],
+    "defaultRowGap": [
+      2,
+      2,
+      2,
+      2,
+      0
+    ],
+    "defaultTotalRows": [
+      2,
+      1,
+      1,
+      1,
+      1
+    ],
+    "sourceWorkbook1Sheets": [
+      "Superficie_ Tierras convert GL",
+      "Superficie_ Tierras convert GL",
+      "Superficie_ Tierras convert GL",
+      "Superficie_ Tierras convert GL",
+      "Superficie_ Tierras convert GL"
+    ],
+    "sourceWorkbook2Sheets": [
+      "Biomasa Stock_BN",
+      "Biomasa Stock_BN",
+      "Biomasa Stock_BN",
+      "Biomasa Stock_BN",
+      "Biomasa Stock_BN"
+    ],
+    "sourceExtractColumns1Base": [
+      "D",
+      "D",
+      "D",
+      "D",
+      "D"
+    ],
+    "sourceExtractColumns2Base": [
+      "D",
+      "D",
+      "D",
+      "D",
+      "D"
+    ],
+    "fixedRangePKboolBDA": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "specialRangePKBDA": [
+      680,
+      680,
+      680,
+      680,
+      680
+    ],
+    "fixedRangePKboolBFE": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "specialRangePKBFE": [
+      181,
+      181,
+      181,
+      181,
+      181
+    ],
+    "destinationColumns": [
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "E",
+          "specialCondition": true
+        },
+        {
+          "operationName": "workbookBFE",
+          "destinationColumn": "G"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "H",
+          "sourceSheetName": "Factores emisión",
+          "fixedCell": "B5",
+          "specialCondition": true
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "K",
+          "formula": "=I{row}+((F{row}-G{row})*E{row})*H{row}-J{row}",
+          "specialCondition": true
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "L",
+          "formula": "=(K{row} * {factorEmisionB12})/1000",
+          "specialCondition": true
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "E"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "G",
+          "sourceSheetName": "Stock_Otras Tierras",
+          "fixedCell": "D16"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "H",
+          "sourceSheetName": "Factores emisión",
+          "fixedCell": "B6"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "K",
+          "formula": "=I{row}+((F{row}-G{row})*E{row})*H{row}-J{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "L",
+          "formula": "=(K{row} * {factorEmisionB12})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "E"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "G",
+          "sourceSheetName": "Stock_Otras Tierras",
+          "fixedCell": "J16"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "H",
+          "sourceSheetName": "Factores emisión",
+          "fixedCell": "B6"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "K",
+          "formula": "=I{row}+((F{row}-G{row})*E{row})*H{row}-J{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "L",
+          "formula": "=(K{row} * {factorEmisionB12})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "E"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "G",
+          "sourceSheetName": "Stock_Otras Tierras",
+          "fixedCell": "M16"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "H",
+          "sourceSheetName": "Factores emisión",
+          "fixedCell": "B6"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "K",
+          "formula": "=I{row}+((F{row}-G{row})*E{row})*H{row}-J{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "L",
+          "formula": "=(K{row} * {factorEmisionB12})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "E"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "G",
+          "sourceSheetName": "Stock_Otras Tierras",
+          "fixedCell": "P16"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "H",
+          "sourceSheetName": "Factores emisión",
+          "fixedCell": "B6"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "K",
+          "formula": "=I{row}+((F{row}-G{row})*E{row})*H{row}-J{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "L",
+          "formula": "=(K{row} * {factorEmisionB12})/1000"
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Pattern3",
+    "sheetIndex": 3,
+    "primaryKeySheetIndex": 3,
+    "primaryKeyColumn": "N",
+    "baseStartRow": 72,
+    "basePrimaryKeyStartRow": 72,
+    "startRowIncrement": 19,
+    "primaryKeyStartRowIncrement": 19,
+    "names": [
+      "X"
+    ],
+    "baseDataStartRowBDA": [
+      24
+    ],
+    "dataStartRowIncrementBDA": [
+      21
+    ],
+    "baseDataStartRowBFE": [
+      24
+    ],
+    "dataStartRowIncrementBFE": [
+      21
+    ],
+    "defaultRowGap": [
+      0
+    ],
+    "defaultTotalRows": [
+      2
+    ],
+    "sourceWorkbook1Sheets": [
+      "Leña"
+    ],
+    "sourceWorkbook2Sheets": [
+      "Factores expansión_bosques"
+    ],
+    "sourceExtractColumns1Base": [
+      "D"
+    ],
+    "sourceExtractColumns2Base": [
+      "D"
+    ],
+    "useDirectRange": [
+      true
+    ],
+    "directRangeStart": [
+      "F10"
+    ],
+    "directRangeEnd": [
+      "F11"
+    ],
+    "specialRowIndex": [
+      null
+    ],
+    "specialRowIndexIncrement": [
+      0
+    ],
+    "fixedRangePKboolBDA": [
+      true
+    ],
+    "specialRangePKBDA": [
+      61
+    ],
+    "fixedRangePKboolBFE": [
+      true
+    ],
+    "specialRangePKBFE": [
+      61
+    ],
+    "destinationColumns": [
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D",
+          "isSummed": false,
+          "condicion": false
+        },
+        {
+          "operationName": "workbookBFE",
+          "destinationColumn": "E"
+        },
+        {
+          "operationName": "custom",
+          "destinationColumn": "F",
+          "sourceSheetName": "Factores expansión_bosques",
+          "cellsToExtract": [
+            "C21",
+            "C23"
+          ]
+        },
+        {
+          "operationName": "custom",
+          "destinationColumn": "H",
+          "sourceSheetName": "Densidad básica",
+          "cellsToExtract": [
+            "B13",
+            "B7"
+          ]
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "I",
+          "sourceSheetName": "Factores emisión",
+          "fixedCell": "B5"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "J",
+          "formula": "=(((D{row}*E{row}*(1+F{row}))+(G{row}*H{row}))*I{row})*-1",
+          "isSummed": true,
+          "condicion": true
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "K",
+          "formula": "=(J{row} * {factorEmisionB12})/1000",
+          "isSummed": true,
+          "condicion": true
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Pattern30",
+    "sheetIndex": 30,
+    "primaryKeySheetIndex": 30,
+    "primaryKeyColumn": "M",
+    "baseStartRow": 126,
+    "basePrimaryKeyStartRow": 126,
+    "startRowIncrement": 38,
+    "primaryKeyStartRowIncrement": 38,
+    "names": [
+      "sec1",
+      "sec2",
+      "sec3",
+      "sec4",
+      "sec5",
+      "sec6"
+    ],
+    "baseDataStartRowBDA": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "baseDataStartRowBFE": [
+      177,
+      3
+    ],
+    "defaultRowGap": [
+      0,
+      1,
+      2,
+      2,
+      2,
+      2
+    ],
+    "defaultTotalRows": [
+      1,
+      2,
+      1,
+      1,
+      1,
+      1
+    ],
+    "sourceWorkbook1Sheets": [
+      "Superficie_ Tierras convert GL",
+      "Superficie_ Tierras convert GL",
+      "Superficie_ Tierras convert GL",
+      "Superficie_ Tierras convert GL",
+      "Superficie_ Tierras convert GL",
+      "Superficie_ Tierras convert GL"
+    ],
+    "sourceWorkbook2Sheets": [
+      "DOM ",
+      "DOM ",
+      "DOM ",
+      "DOM ",
+      "DOM ",
+      "DOM "
+    ],
+    "sourceExtractColumns1Base": [
+      "D",
+      "D",
+      "D",
+      "D",
+      "D",
+      "D"
+    ],
+    "sourceExtractColumns2Base": [
+      "D",
+      "D",
+      "D",
+      "D",
+      "D",
+      "D"
+    ],
+    "fixedRangePKboolBDA": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "specialRangePKBDA": [
+      680,
+      680,
+      680,
+      680,
+      680,
+      680
+    ],
+    "fixedRangePKboolBFE": [
+      true,
+      false
+    ],
+    "specialRangePKBFE": [
+      194,
+      83
+    ],
+    "destinationColumns": [
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "customWorkbookBFE",
+          "destinationColumn": "E",
+          "searchColumn": "C",
+          "sourceSheetName": "DOM ",
+          "extractColumnBase": "F",
+          "dataStartRow": 177,
+          "fixedRangePKbool": true,
+          "specialRangePK": 194
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "F",
+          "manualValue": 0
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "G",
+          "manualValue": 1
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "H",
+          "formula": "=D{row}*(F{row}-E{row})/G{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": "=H{row} * {factorEmisionB12}/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "F",
+          "manualValue": 0
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "G",
+          "manualValue": 1
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "H",
+          "formula": "=D{row}*(F{row}-E{row})/G{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": "=H{row} * {factorEmisionB12}/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "F",
+          "manualValue": 0
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "G",
+          "manualValue": 1
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": "=D{row}*(F{row}-E{row})/G{row}"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "F",
+          "manualValue": 0
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "G",
+          "manualValue": 1
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": "=D{row}*(F{row}-E{row})/G{row}"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "F",
+          "manualValue": 0
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "G",
+          "manualValue": 1
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": "=D{row}*(F{row}-E{row})/G{row}"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "F",
+          "manualValue": 0
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "G",
+          "manualValue": 1
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": "=D{row}*(F{row}-E{row})/G{row}"
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Pattern31",
+    "sheetIndex": 31,
+    "primaryKeySheetIndex": 31,
+    "primaryKeyColumn": "Q",
+    "baseStartRow": 141,
+    "basePrimaryKeyStartRow": 141,
+    "startRowIncrement": 40,
+    "primaryKeyStartRowIncrement": 40,
+    "names": [
+      "B",
+      "X",
+      "Y",
+      "Z",
+      "W",
+      "A"
+    ],
+    "baseDataStartRowBDA": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "baseDataStartRowBFE": [
+      157,
+      157,
+      157,
+      157,
+      157,
+      157
+    ],
+    "defaultRowGap": [
+      0,
+      1,
+      2,
+      2,
+      2,
+      2
+    ],
+    "defaultTotalRows": [
+      1,
+      2,
+      1,
+      1,
+      1,
+      1
+    ],
+    "sourceWorkbook1Sheets": [
+      "Superf_transicion_GL",
+      "Superf_transicion_GL",
+      "Superf_transicion_GL",
+      "Superf_transicion_GL",
+      "Superf_transicion_GL",
+      "Superf_transicion_GL"
+    ],
+    "sourceWorkbook2Sheets": [
+      "Carbono del suelo",
+      "Carbono del suelo",
+      "Carbono del suelo",
+      "Carbono del suelo",
+      "Carbono del suelo",
+      "Carbono del suelo"
+    ],
+    "sourceExtractColumns1Base": [
+      "D",
+      "D",
+      "D",
+      "D",
+      "D",
+      "D"
+    ],
+    "sourceExtractColumns2Base": [
+      "F",
+      "F",
+      "F",
+      "F",
+      "F",
+      "F"
+    ],
+    "useDirectRange": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "specialRowIndex": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "specialRowIndexIncrement": [
+      0
+    ],
+    "fixedRangePKboolBDA": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "specialRangePKBDA": [
+      682,
+      682,
+      682,
+      682,
+      682,
+      682
+    ],
+    "fixedRangePKboolBFE": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "specialRangePKBFE": [
+      174,
+      174,
+      174,
+      174,
+      174,
+      174
+    ],
+    "destinationColumns": [
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D",
+          "specialCondition": true
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "E",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "K{2}"
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "F",
+          "manualValue": 20
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "G",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "K{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "H",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "L{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "I",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "M{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "J",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "B92"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "K",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "C92"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "L",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "D92"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "M",
+          "formula": "=((D{row}*E{row}*G{row}*H{row}*I{row})-(D{row}*E{row}*J{row}*K{row}*L{row}))/F{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "N",
+          "formula": "=(M{row} * {factorEmisionB12})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D",
+          "specialCondition": true
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "E",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "K{2}"
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "F",
+          "manualValue": 20
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "G",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "K{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "H",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "L{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "I",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "M{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "J",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "B93"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "K",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "C93"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "L",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "D93"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "M",
+          "formula": "=((D{row}*E{row}*G{row}*H{row}*I{row})-(D{row}*E{row}*J{row}*K{row}*L{row}))/F{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "N",
+          "formula": "=(M{row} * {factorEmisionB12})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D",
+          "specialCondition": true
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "E",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "K{2}"
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "F",
+          "manualValue": 20
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "G",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "K{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "H",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "L{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "I",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "M{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "J",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "H{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "K",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "I{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "L",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "J{45}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "M",
+          "formula": "=((D{row}*E{row}*G{row}*H{row}*I{row})-(D{row}*E{row}*J{row}*K{row}*L{row}))/F{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "N",
+          "formula": "=(M{row} * {factorEmisionB12})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D",
+          "specialCondition": true
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "E",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "K{2}"
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "F",
+          "manualValue": 20
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "G",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "K{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "H",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "L{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "I",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "M{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "J",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "N{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "K",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "O{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "L",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "P{45}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "M",
+          "formula": "=((D{row}*E{row}*G{row}*H{row}*I{row})-(D{row}*E{row}*J{row}*K{row}*L{row}))/F{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "N",
+          "formula": "=(M{row} * {factorEmisionB12})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D",
+          "specialCondition": true
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "E",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "K{2}"
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "F",
+          "manualValue": 20
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "G",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "K{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "H",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "L{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "I",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "M{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "J",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "B94"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "K",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "C94"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "L",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "D94"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "M",
+          "formula": "=((D{row}*E{row}*G{row}*H{row}*I{row})-(D{row}*E{row}*J{row}*K{row}*L{row}))/F{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "N",
+          "formula": "=(M{row} * {factorEmisionB12})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D",
+          "specialCondition": true
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "E",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "K{2}"
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "F",
+          "manualValue": 20
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "G",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "K{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "H",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "L{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "I",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "M{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "J",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "T{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "K",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "U{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "L",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "V{45}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "M",
+          "formula": "=((D{row}*E{row}*G{row}*H{row}*I{row})-(D{row}*E{row}*J{row}*K{row}*L{row}))/F{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "N",
+          "formula": "=(M{row} * {factorEmisionB12})/1000"
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Pattern33",
+    "sheetIndex": 33,
+    "primaryKeySheetIndex": 33,
+    "primaryKeyColumn": "O",
+    "baseStartRow": 74,
+    "basePrimaryKeyStartRow": 75,
+    "startRowIncrement": 30,
+    "primaryKeyStartRowIncrement": 30,
+    "names": [
+      "sec1"
+    ],
+    "baseDataStartRowBDA": [
+      4
+    ],
+    "baseDataStartRowBFE": [
+      74
+    ],
+    "defaultTotalRows": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "useDirectRange": [
+      true
+    ],
+    "directRangeStart": [
+      5
+    ],
+    "directRangeEnd": [
+      8
+    ],
+    "sourceWorkbook1Sheets": [
+      "Incendios"
+    ],
+    "sourceWorkbook2Sheets": [
+      "Biomasa Stock_BN",
+      "Factores emisión No-CO2"
+    ],
+    "sourceExtractColumns1Base": [
+      "D"
+    ],
+    "sourceExtractColumns2Base": [
+      "F",
+      "F",
+      "F",
+      "F",
+      "F",
+      "F",
+      "F",
+      "F",
+      "F",
+      "F"
+    ],
+    "fixedRangePKboolBDA": [
+      true,
+      true
+    ],
+    "specialRangePKBDA": [
+      129
+    ],
+    "fixedRangePKboolBFE": [
+      true,
+      true
+    ],
+    "specialRangePKBFE": [
+      154,
+      315
+    ],
+    "destinationColumns": [
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "E",
+          "sourceSheetName": "Biomasa Stock_BN",
+          "fixedCell": "E{6}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "F",
+          "sourceSheetName": "Factores emisión No-CO2",
+          "fixedCell": "E5"
+        },
+        {
+          "operationName": "custom",
+          "destinationColumn": "H",
+          "sourceSheetName": "Factores emisión No-CO2",
+          "cellsToExtract": [
+            "B5",
+            "B6",
+            "B7",
+            "B8"
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Pattern39",
+    "sheetIndex": 39,
+    "primaryKeySheetIndex": 39,
+    "primaryKeyColumn": "L",
+    "baseStartRow": 125,
+    "basePrimaryKeyStartRow": 125,
+    "startRowIncrement": 37,
+    "primaryKeyStartRowIncrement": 37,
+    "names": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "baseDataStartRowBDA": [
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "baseDataStartRowBFE": [
+      185,
+      185,
+      185,
+      185,
+      185
+    ],
+    "dataStartRowIncrementBFE": [
+      21,
+      21,
+      21,
+      21,
+      21,
+      21
+    ],
+    "defaultRowGap": [
+      1,
+      2,
+      2,
+      2,
+      0
+    ],
+    "defaultTotalRows": [
+      3,
+      1,
+      1,
+      1,
+      1
+    ],
+    "sourceWorkbook1Sheets": [
+      "Superficie_ Tierras convert WL",
+      "Superficie_ Tierras convert WL",
+      "Superficie_ Tierras convert WL",
+      "Superficie_ Tierras convert WL",
+      "Superficie_ Tierras convert WL"
+    ],
+    "sourceWorkbook2Sheets": [
+      "Biomasa Stock_BN",
+      "Stock_Otras Tierras",
+      "Stock_Otras Tierras",
+      "Stock_Otras Tierras",
+      "Stock_Otras Tierras"
+    ],
+    "sourceExtractColumns1Base": [
+      "D",
+      "D",
+      "D",
+      "D",
+      "D"
+    ],
+    "sourceExtractColumns2Base": [
+      "E",
+      "E",
+      "E",
+      "E",
+      "E"
+    ],
+    "useDirectRange": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "directRangeStart": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "directRangeEnd": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "specialRowIndex": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "specialRowIndexIncrement": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "fixedRangePKboolBDA": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "specialRangePKBDA": [
+      680,
+      680,
+      680,
+      680,
+      680
+    ],
+    "fixedRangePKboolBFE": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "specialRangePKBFE": [
+      222,
+      222,
+      222,
+      222,
+      222
+    ],
+    "destinationColumns": [
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D",
+          "specialCondition": true
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "E",
+          "formula": "0",
+          "specialCondition": true
+        },
+        {
+          "operationName": "workbookBFE",
+          "destinationColumn": "F"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "G",
+          "formula": "={factorEmisionB5}",
+          "specialCondition": true
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "H",
+          "formula": "=(D{row}*(E{row}-F{row}))*G{row}",
+          "specialCondition": true
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": "=(H{row} * {factorEmisionB12} / 1000)",
+          "specialCondition": true
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "E",
+          "formula": "0"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "F",
+          "sourceSheetName": "Stock_Otras Tierras",
+          "fixedCell": "D{16}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "G",
+          "formula": "={factorEmisionB6}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "H",
+          "formula": "=(D{row}*(E{row}-F{row}))*G{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": "=(H{row} * {factorEmisionB12} / 1000)"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "E",
+          "formula": "0"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "F",
+          "sourceSheetName": "Stock_Otras Tierras",
+          "fixedCell": "G{16}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "G",
+          "formula": "={factorEmisionB6}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "H",
+          "formula": "=(D{row}*(E{row}-F{row}))*G{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": "=(H{row} * {factorEmisionB12} / 1000)"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "E",
+          "formula": "0"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "F",
+          "sourceSheetName": "Stock_Otras Tierras",
+          "fixedCell": "M{16}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "G",
+          "formula": "={factorEmisionB6}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "H",
+          "formula": "=(D{row}*(E{row}-F{row}))*G{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": "=(H{row} * {factorEmisionB12} / 1000)"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "E",
+          "formula": "0"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "F",
+          "sourceSheetName": "Stock_Otras Tierras",
+          "fixedCell": "P{16}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "G",
+          "formula": "={factorEmisionB6}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "H",
+          "formula": "=(D{row}*(E{row}-F{row}))*G{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": "=(H{row} * {factorEmisionB12} / 1000)"
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Pattern4",
+    "sheetIndex": 4,
+    "primaryKeySheetIndex": 4,
+    "primaryKeyColumn": "L",
+    "baseStartRow": 78,
+    "basePrimaryKeyStartRow": 78,
+    "startRowIncrement": 21,
+    "primaryKeyStartRowIncrement": 21,
+    "names": [
+      "T",
+      "Z",
+      "G",
+      "H"
+    ],
+    "baseDataStartRowBDA": [
+      6,
+      6,
+      6,
+      6
+    ],
+    "dataStartRowIncrementBDA": [
+      22,
+      22,
+      22,
+      22
+    ],
+    "baseDataStartRowBFE": [
+      6,
+      3,
+      3,
+      3
+    ],
+    "dataStartRowIncrementBFE": [
+      20,
+      20,
+      20,
+      20
+    ],
+    "defaultRowGap": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "defaultTotalRows": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "sourceWorkbook1Sheets": [
+      "Incendios",
+      "Incendios",
+      "Incendios",
+      "Incendios"
+    ],
+    "sourceWorkbook2Sheets": [
+      "Biomasa Stock_BN",
+      "Biomasa PF Incendiada",
+      "Biomasa PF Incendiada",
+      "Biomasa PF Incendiada"
+    ],
+    "sourceExtractColumns1Base": [
+      "D",
+      "D",
+      "D",
+      "D"
+    ],
+    "sourceExtractColumns2Base": [
+      "E",
+      "D",
+      "D",
+      "D"
+    ],
+    "useDirectRange": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "directRangeStart": [
+      null,
+      null,
+      null,
+      null
+    ],
+    "directRangeEnd": [
+      null,
+      null,
+      null,
+      null
+    ],
+    "specialRowIndex": [
+      null,
+      null,
+      null,
+      null
+    ],
+    "specialRowIndexIncrement": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "fixedRangePKboolBDA": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "specialRangePKBDA": [
+      234,
+      234,
+      234,
+      234
+    ],
+    "fixedRangePKboolBFE": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "specialRangePKBFE": [
+      262,
+      58,
+      58,
+      58
+    ],
+    "destinationColumns": [
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D",
+          "isSummed": false,
+          "condicion": false
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "E",
+          "sourceSheetName": "Biomasa Stock_BN",
+          "fixedCell": "E{6}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "F",
+          "sourceSheetName": "Factores expansión_bosques",
+          "fixedCell": "C21"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "G",
+          "sourceSheetName": "Factores emisión",
+          "fixedCell": "B5"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "H",
+          "formula": "=(D{row}*E{row}*(1+F{row})*G{row} * {DiagramaflugoBincendiosL30})*-1"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": "=(H{row} * {factorEmisionB12})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D",
+          "isSummed": false,
+          "condicion": false
+        },
+        {
+          "operationName": "workbookBFE",
+          "destinationColumn": "E"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "F",
+          "sourceSheetName": "Factores expansión_bosques",
+          "fixedCell": "C22"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "G",
+          "sourceSheetName": "Factores emisión",
+          "fixedCell": "B5"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "H",
+          "formula": "=(D{row}*E{row}*(1+F{row})*G{row} * {DiagramaflugoBincendiosL30})*-1"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": "=(H{row} * {factorEmisionB12})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D",
+          "isSummed": false,
+          "condicion": false
+        },
+        {
+          "operationName": "workbookBFE",
+          "destinationColumn": "E"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "F",
+          "sourceSheetName": "Factores expansión_bosques",
+          "fixedCell": "C23"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "G",
+          "sourceSheetName": "Factores emisión",
+          "fixedCell": "B5"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "H",
+          "formula": "=(D{row}*E{row}*(1+F{row})*G{row} * {DiagramaflugoBincendiosC34})*-1"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": "=(H{row} * {factorEmisionB12})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D",
+          "isSummed": false,
+          "condicion": false
+        },
+        {
+          "operationName": "workbookBFE",
+          "destinationColumn": "E"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "F",
+          "sourceSheetName": "Factores expansión_bosques",
+          "fixedCell": "C25"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "G",
+          "sourceSheetName": "Factores emisión",
+          "fixedCell": "B5"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "H",
+          "formula": "=(D{row}*E{row}*(1+F{row})*G{row} * {DiagramaflugoBincendiosF30})*-1"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": "=(H{row} * {factorEmisionB12})/1000"
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Pattern41",
+    "sheetIndex": 41,
+    "primaryKeySheetIndex": 41,
+    "primaryKeyColumn": "M",
+    "baseStartRow": 125,
+    "basePrimaryKeyStartRow": 125,
+    "startRowIncrement": 37,
+    "primaryKeyStartRowIncrement": 37,
+    "names": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "baseDataStartRowBDA": [
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "baseDataStartRowBFE": [
+      225,
+      3,
+      3,
+      3,
+      3
+    ],
+    "dataStartRowIncrementBFE": [
+      21,
+      21,
+      21,
+      21,
+      21,
+      21
+    ],
+    "defaultRowGap": [
+      2,
+      2,
+      2,
+      2,
+      0
+    ],
+    "defaultTotalRows": [
+      2,
+      1,
+      1,
+      1,
+      1
+    ],
+    "sourceWorkbook1Sheets": [
+      "Superficie_ Tierras convert SL",
+      "Superficie_ Tierras convert SL",
+      "Superficie_ Tierras convert SL",
+      "Superficie_ Tierras convert SL",
+      "Superficie_ Tierras convert SL"
+    ],
+    "sourceWorkbook2Sheets": [
+      "Biomasa Stock_BN",
+      "Biomasa Stock_BN",
+      "Biomasa Stock_BN",
+      "Biomasa Stock_BN",
+      "Biomasa Stock_BN"
+    ],
+    "sourceExtractColumns1Base": [
+      "D",
+      "D",
+      "D",
+      "D",
+      "D"
+    ],
+    "sourceExtractColumns2Base": [
+      "D",
+      "X",
+      "X",
+      "X",
+      "X"
+    ],
+    "useDirectRange": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "directRangeStart": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "directRangeEnd": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "specialRowIndex": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "specialRowIndexIncrement": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "fixedRangePKboolBDA": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "specialRangePKBDA": [
+      680,
+      680,
+      680,
+      680,
+      680
+    ],
+    "fixedRangePKboolBFE": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "specialRangePKBFE": [
+      262,
+      680,
+      680,
+      680,
+      680
+    ],
+    "destinationColumns": [
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D",
+          "specialCondition": true
+        },
+        {
+          "operationName": "workbookBFE",
+          "destinationColumn": "E"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "F",
+          "formula": "={factorEmisionB5}",
+          "specialCondition": true
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "G",
+          "formula": "={otrasTierrasF9}*{factorEmisionB6}",
+          "specialCondition": true
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "H",
+          "formula": "={otrasTierrasG9}*{factorEmisionB6}",
+          "specialCondition": true
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": "=(G{row}+((0-E{row})*F{row})-H{row})*D{row}",
+          "specialCondition": true
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "J",
+          "formula": "=(I{row} * {factorEmisionB12})/1000",
+          "specialCondition": true
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "formula-dornersito",
+          "destinationColumn": "E",
+          "formula": "=({D})"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "F",
+          "formula": "={factorEmisionB6}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "G",
+          "formula": "={otrasTierrasF9}*{factorEmisionB6}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "H",
+          "formula": "={otrasTierrasG9}*{factorEmisionB6}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": "=(G{row}+((0-E{row})*F{row})-H{row})*D{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "J",
+          "formula": "=(I{row} * {factorEmisionB12})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "formula-dornersito",
+          "destinationColumn": "E",
+          "formula": "=({G})"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "F",
+          "formula": "={factorEmisionB6}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "G",
+          "formula": "={otrasTierrasF9}*{factorEmisionB6}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "H",
+          "formula": "={otrasTierrasG9}*{factorEmisionB6}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": "=(G{row}+((0-E{row})*F{row})-H{row})*D{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "J",
+          "formula": "=(I{row} * {factorEmisionB12})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "formula-dornersito",
+          "destinationColumn": "E",
+          "formula": "=({J})"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "F",
+          "formula": "={factorEmisionB6}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "G",
+          "formula": "={otrasTierrasF9}*{factorEmisionB6}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "H",
+          "formula": "={otrasTierrasG9}*{factorEmisionB6}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": "=(G{row}+((0-E{row})*F{row})-H{row})*D{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "J",
+          "formula": "=(I{row} * {factorEmisionB12})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "formula-dornersito",
+          "destinationColumn": "E",
+          "formula": "=({P})"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "F",
+          "formula": "={factorEmisionB6}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "G",
+          "formula": "={otrasTierrasF9}*{factorEmisionB6}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "H",
+          "formula": "={otrasTierrasG9}*{factorEmisionB6}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": "=(G{row}+((0-E{row})*F{row})-H{row})*D{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "J",
+          "formula": "=(I{row} * {factorEmisionB12})/1000"
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Pattern42",
+    "sheetIndex": 42,
+    "primaryKeySheetIndex": 42,
+    "primaryKeyColumn": "L",
+    "baseStartRow": 126,
+    "basePrimaryKeyStartRow": 126,
+    "startRowIncrement": 38,
+    "primaryKeyStartRowIncrement": 38,
+    "names": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "baseDataStartRowBDA": [
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "dataStartRowIncrementBDA": [
+      21,
+      21,
+      21,
+      21,
+      21,
+      21
+    ],
+    "baseDataStartRowBFE": [
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "dataStartRowIncrementBFE": [
+      197,
+      197,
+      197,
+      197,
+      197,
+      197
+    ],
+    "defaultRowGap": [
+      1,
+      2,
+      2,
+      2,
+      0
+    ],
+    "defaultTotalRows": [
+      3,
+      1,
+      1,
+      1,
+      1
+    ],
+    "sourceWorkbook1Sheets": [
+      "Superficie_ Tierras convert SL",
+      "Superficie_ Tierras convert SL",
+      "Superficie_ Tierras convert SL",
+      "Superficie_ Tierras convert SL",
+      "Superficie_ Tierras convert SL"
+    ],
+    "sourceWorkbook2Sheets": [
+      "DOM ",
+      "DOM ",
+      "DOM ",
+      "DOM ",
+      "DOM "
+    ],
+    "sourceExtractColumns1Base": [
+      "D",
+      "D",
+      "D",
+      "D",
+      "D"
+    ],
+    "sourceExtractColumns2Base": [
+      "F",
+      "F",
+      "F",
+      "F",
+      "F"
+    ],
+    "useDirectRange": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "directRangeStart": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "directRangeEnd": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "specialRowIndex": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "specialRowIndexIncrement": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "fixedRangePKboolBDA": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "specialRangePKBDA": [
+      680,
+      680,
+      680,
+      680,
+      680
+    ],
+    "fixedRangePKboolBFE": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "specialRangePKBFE": [
+      214,
+      214,
+      214,
+      214,
+      214
+    ],
+    "destinationColumns": [
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "customWorkbookBFE",
+          "destinationColumn": "E",
+          "searchColumn": "C",
+          "sourceSheetName": "DOM ",
+          "extractColumn": "F",
+          "dataStartRow": 197,
+          "fixedRangePKbool": true,
+          "specialRangePK": 214
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "F",
+          "formula": "=0"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "G",
+          "formula": "=1"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "H",
+          "formula": "=D{row}*(F{row}-E{row})/G{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": "=(H{row} * {factorEmisionB12})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "E",
+          "formula": "=0"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "F",
+          "formula": "=0"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "G",
+          "formula": "=1"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": "=D{row}*(F{row}-E{row})/G{row}"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "E",
+          "formula": "=0"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "F",
+          "formula": "=0"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "G",
+          "formula": "=1"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": "=D{row}*(F{row}-E{row})/G{row}"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "E",
+          "formula": "=0"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "F",
+          "formula": "=0"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "G",
+          "formula": "=1"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": "=D{row}*(F{row}-E{row})/G{row}"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "E",
+          "formula": "=0"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "F",
+          "formula": "=0"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "G",
+          "formula": "=1"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": "=D{row}*(F{row}-E{row})/G{row}"
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Pattern43",
+    "sheetIndex": 43,
+    "primaryKeySheetIndex": 43,
+    "primaryKeyColumn": "Q",
+    "baseStartRow": 139,
+    "basePrimaryKeyStartRow": 139,
+    "startRowIncrement": 40,
+    "primaryKeyStartRowIncrement": 40,
+    "names": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G"
+    ],
+    "baseDataStartRowBDA": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "dataStartRowIncrementBDA": [
+      21,
+      21,
+      21,
+      21,
+      21,
+      21,
+      21,
+      21
+    ],
+    "baseDataStartRowBFE": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "dataStartRowIncrementBFE": [
+      21,
+      21,
+      21,
+      21,
+      21,
+      21,
+      21,
+      21
+    ],
+    "defaultRowGap": [
+      0,
+      0,
+      1,
+      2,
+      2,
+      2,
+      0
+    ],
+    "defaultTotalRows": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "sourceWorkbook1Sheets": [
+      "Superf_transicion_SL",
+      "Superf_transicion_SL",
+      "Superf_transicion_SL",
+      "Superf_transicion_SL",
+      "Superf_transicion_SL",
+      "Superf_transicion_SL",
+      "Superf_transicion_SL"
+    ],
+    "sourceWorkbook2Sheets": [
+      "Biomasa Stock_BN",
+      "Biomasa Stock_BN",
+      "Biomasa Stock_BN",
+      "Biomasa Stock_BN",
+      "Biomasa Stock_BN",
+      "Biomasa Stock_BN",
+      "Biomasa Stock_BN"
+    ],
+    "sourceExtractColumns1Base": [
+      "D",
+      "D",
+      "D",
+      "D",
+      "D",
+      "D",
+      "D"
+    ],
+    "sourceExtractColumns2Base": [
+      "X",
+      "X",
+      "X",
+      "X",
+      "X",
+      "X",
+      "X"
+    ],
+    "useDirectRange": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "directRangeStart": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "directRangeEnd": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "specialRowIndex": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "specialRowIndexIncrement": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "fixedRangePKboolBDA": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "specialRangePKBDA": [
+      680,
+      680,
+      680,
+      680,
+      680,
+      680,
+      680
+    ],
+    "fixedRangePKboolBFE": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "specialRangePKBFE": [
+      680,
+      680,
+      680,
+      680,
+      680,
+      680,
+      680
+    ],
+    "destinationColumns": [
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "E",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "K{2}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "F",
+          "formula": "20"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "G",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "B{65}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "H",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "C{65}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "I",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "D{65}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "J",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "B117"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "K",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "C117"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "L",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "D117"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "M",
+          "formula": "=((D{row}*E{row}*G{row}*H{row}*I{row})-(D{row}*E{row}*J{row}*K{row}*L{row}))/F{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "N",
+          "formula": "=(M{row}*{factorEmisionB12})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "E",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "K{2}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "F",
+          "formula": "20"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "G",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "E{65}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "H",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "F{65}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "I",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "G{65}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "J",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "B118"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "K",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "C118"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "L",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "D118"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "M",
+          "formula": "=((D{row}*E{row}*G{row}*H{row}*I{row})-(D{row}*E{row}*J{row}*K{row}*L{row}))/F{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "N",
+          "formula": "=(M{row}*{factorEmisionB12})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "E",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "K{2}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "F",
+          "formula": "20"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "G",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "E{65}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "H",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "F{65}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "I",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "G{65}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "J",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "B118"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "K",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "C118"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "L",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "D118"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "M",
+          "formula": "=((D{row}*E{row}*G{row}*H{row}*I{row})-(D{row}*E{row}*J{row}*K{row}*L{row}))/F{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "N",
+          "formula": "=(M{row}*{factorEmisionB12})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "E",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "K{2}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "F",
+          "formula": "20"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "G",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "H{65}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "H",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "I{65}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "I",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "J{65}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "J",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "H{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "K",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "I{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "L",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "J{45}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "M",
+          "formula": "=((D{row}*E{row}*G{row}*H{row}*I{row})-(D{row}*E{row}*J{row}*K{row}*L{row}))/F{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "N",
+          "formula": "=(M{row}*{factorEmisionB12})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "E",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "K{2}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "F",
+          "formula": "20"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "G",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "K{65}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "H",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "L{65}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "I",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "M{65}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "J",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "B119"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "K",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "C119"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "L",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "D119"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "M",
+          "formula": "=((D{row}*E{row}*G{row}*H{row}*I{row})-(D{row}*E{row}*J{row}*K{row}*L{row}))/F{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "N",
+          "formula": "=(M{row}*{factorEmisionB12})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "E",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "K{2}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "F",
+          "formula": "20"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "G",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "N{65}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "H",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "O{65}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "I",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "P{65}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "J",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "B120"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "K",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "C120"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "L",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "D120"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "M",
+          "formula": "=((D{row}*E{row}*G{row}*H{row}*I{row})-(D{row}*E{row}*J{row}*K{row}*L{row}))/F{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "N",
+          "formula": "=(M{row}*{factorEmisionB12})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "E",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "K{2}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "F",
+          "formula": "20"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "G",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "T{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "H",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "U{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "I",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "V{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "J",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "T{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "K",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "U{45}"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "L",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "V{45}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "M",
+          "formula": "=((D{row}*E{row}*G{row}*H{row}*I{row})-(D{row}*E{row}*J{row}*K{row}*L{row}))/F{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "N",
+          "formula": "=(M{row}*{factorEmisionB12})/1000"
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Pattern45",
+    "sheetIndex": 45,
+    "primaryKeySheetIndex": 45,
+    "primaryKeyColumn": "M",
+    "baseStartRow": 125,
+    "basePrimaryKeyStartRow": 125,
+    "startRowIncrement": 37,
+    "primaryKeyStartRowIncrement": 37,
+    "names": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "baseDataStartRowBDA": [
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "dataStartRowIncrementBDA": [
+      21,
+      21,
+      21,
+      21,
+      21
+    ],
+    "baseDataStartRowBFE": [
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "dataStartRowIncrementBFE": [
+      21,
+      21,
+      21,
+      21,
+      21
+    ],
+    "defaultRowGap": [
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    "defaultTotalRows": [
+      3,
+      2,
+      2,
+      2,
+      2
+    ],
+    "sourceWorkbook1Sheets": [
+      "Superficie_ Tierras convert OL",
+      "Superficie_ Tierras convert OL",
+      "Superficie_ Tierras convert OL",
+      "Superficie_ Tierras convert OL",
+      "Superficie_ Tierras convert OL"
+    ],
+    "sourceWorkbook2Sheets": [
+      "Factores expansión_bosques",
+      "Factores expansión_bosques",
+      "Factores expansión_bosques",
+      "Factores expansión_bosques",
+      "Factores expansión_bosques"
+    ],
+    "sourceExtractColumns1Base": [
+      "D",
+      "D",
+      "D",
+      "D",
+      "D"
+    ],
+    "sourceExtractColumns2Base": [
+      "X",
+      "X",
+      "X",
+      "X",
+      "X"
+    ],
+    "useDirectRange": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "directRangeStart": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "directRangeEnd": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "specialRowIndex": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "specialRowIndexIncrement": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "fixedRangePKboolBDA": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "specialRangePKBDA": [
+      680,
+      680,
+      680,
+      680,
+      680
+    ],
+    "fixedRangePKboolBFE": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "specialRangePKBFE": [
+      680,
+      680,
+      680,
+      680,
+      680
+    ],
+    "destinationColumns": [
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D",
+          "isSummed": false,
+          "condicion": false
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": "=(G{row}+((0-E{row})*F{row})-H{row})*D{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "J",
+          "formula": "=(I{row} * {factorEmisionB12})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D",
+          "isSummed": false,
+          "condicion": false
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": "=(G{row}+((0-E{row})*F{row})-H{row})*D{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "J",
+          "formula": "=(I{row} * {factorEmisionB12})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D",
+          "isSummed": false,
+          "condicion": false
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": "=(G{row}+((0-E{row})*F{row})-H{row})*D{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "J",
+          "formula": "=(I{row} * {factorEmisionB12})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D",
+          "isSummed": false,
+          "condicion": false
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": "=(G{row}+((0-E{row})*F{row})-H{row})*D{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "J",
+          "formula": "=(I{row} * {factorEmisionB12})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D",
+          "isSummed": false,
+          "condicion": false
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": "=(G{row}+((0-E{row})*F{row})-H{row})*D{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "J",
+          "formula": "=(I{row} * {factorEmisionB12})/1000"
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Pattern46",
+    "sheetIndex": 46,
+    "primaryKeySheetIndex": 46,
+    "primaryKeyColumn": "M",
+    "baseStartRow": 201,
+    "basePrimaryKeyStartRow": 201,
+    "startRowIncrement": 60,
+    "primaryKeyStartRowIncrement": 60,
+    "names": [
+      "A",
+      "B"
+    ],
+    "baseDataStartRowBDA": [
+      3,
+      3
+    ],
+    "dataStartRowIncrementBDA": [
+      21,
+      21
+    ],
+    "baseDataStartRowBFE": [
+      3,
+      3
+    ],
+    "dataStartRowIncrementBFE": [
+      21,
+      21
+    ],
+    "defaultRowGap": [
+      22,
+      0
+    ],
+    "defaultTotalRows": [
+      3,
+      4
+    ],
+    "sourceWorkbook1Sheets": [
+      "Superficie_ Tierras convert OL",
+      "Superficie_ Tierras convert OL"
+    ],
+    "sourceWorkbook2Sheets": [
+      "Factores emisión No-CO2",
+      "Factores emisión No-CO2"
+    ],
+    "sourceExtractColumns1Base": [
+      "D",
+      "D"
+    ],
+    "sourceExtractColumns2Base": [
+      "X",
+      "X"
+    ],
+    "useDirectRange": [
+      false,
+      false
+    ],
+    "directRangeStart": [
+      null,
+      null
+    ],
+    "directRangeEnd": [
+      null,
+      null
+    ],
+    "specialRowIndex": [
+      null,
+      null
+    ],
+    "specialRowIndexIncrement": [
+      0,
+      0
+    ],
+    "fixedRangePKboolBDA": [
+      true,
+      true
+    ],
+    "specialRangePKBDA": [
+      680,
+      680
+    ],
+    "fixedRangePKboolBFE": [
+      true,
+      true
+    ],
+    "specialRangePKBFE": [
+      680,
+      680
+    ],
+    "destinationColumns": [
+      [
+        {
+          "operationName": "formula",
+          "destinationColumn": "D",
+          "formula": "falta valor"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "F",
+          "formula": "=({factorEmisionNo_CO2})"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "G",
+          "formula": "=(D{row}*F{row})"
+        }
+      ],
+      [
+        {
+          "operationName": "formula",
+          "destinationColumn": "D",
+          "formula": "falta valor"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "F",
+          "formula": "=({factorEmisionNo_CO2})"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "G",
+          "formula": "=(D{row}*F{row})"
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Pattern48",
+    "sheetIndex": 48,
+    "primaryKeySheetIndex": 48,
+    "primaryKeyColumn": "M",
+    "baseStartRow": 13,
+    "basePrimaryKeyStartRow": 201,
+    "startRowIncrement": 60,
+    "primaryKeyStartRowIncrement": 60,
+    "names": [
+      "A"
+    ],
+    "baseDataStartRowBDA": [
+      3
+    ],
+    "dataStartRowIncrementBDA": [
+      21
+    ],
+    "baseDataStartRowBFE": [
+      3
+    ],
+    "dataStartRowIncrementBFE": [
+      21
+    ],
+    "defaultRowGap": [
+      0
+    ],
+    "defaultTotalRows": [
+      1
+    ],
+    "sourceWorkbook1Sheets": [
+      "Superficie_ Tierras convert OL"
+    ],
+    "sourceWorkbook2Sheets": [
+      "Factores emisión No-CO2"
+    ],
+    "sourceExtractColumns1Base": [
+      "D"
+    ],
+    "sourceExtractColumns2Base": [
+      "X"
+    ],
+    "useDirectRange": [
+      false
+    ],
+    "directRangeStart": [
+      null
+    ],
+    "directRangeEnd": [
+      null
+    ],
+    "specialRowIndex": [
+      null
+    ],
+    "specialRowIndexIncrement": [
+      0
+    ],
+    "fixedRangePKboolBDA": [
+      true
+    ],
+    "specialRangePKBDA": [
+      680
+    ],
+    "fixedRangePKboolBFE": [
+      true
+    ],
+    "specialRangePKBFE": [
+      680
+    ],
+    "destinationColumns": [
+      [
+        {
+          "operationName": "formula",
+          "destinationColumn": "B",
+          "formula": "=452.782482303758"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "D",
+          "formula": "=791.982060377844"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "F",
+          "formula": "=31.5296"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "G",
+          "formula": "=1751.277679"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "H",
+          "formula": "=5429.268942"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": "=3256.73838069624"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "J",
+          "formula": "=4637.28688162216"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "K",
+          "formula": "=-2903.93422138543"
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Pattern5",
+    "sheetIndex": 5,
+    "primaryKeySheetIndex": 5,
+    "primaryKeyColumn": "M",
+    "baseStartRow": 71,
+    "basePrimaryKeyStartRow": 71,
+    "startRowIncrement": 20,
+    "primaryKeyStartRowIncrement": 20,
+    "names": [
+      "sec1",
+      "sec2"
+    ],
+    "baseDataStartRowBDA": [
+      35,
+      428
+    ],
+    "baseDataStartRowBFE": [
+      6,
+      3
+    ],
+    "defaultRowGap": [
+      1,
+      2
+    ],
+    "defaultTotalRows": [
+      1,
+      4
+    ],
+    "sourceWorkbook1Sheets": [
+      "Tierras FP_BN",
+      "Tierras_transición_PF"
+    ],
+    "sourceWorkbook2Sheets": [
+      "IMA_PF_ponderado",
+      "IMA_PF_ponderado"
+    ],
+    "sourceExtractColumns1Base": [
+      "D",
+      "I"
+    ],
+    "sourceExtractColumns2Base": [
+      "G",
+      "G"
+    ],
+    "useDirectRange": [
+      false,
+      false
+    ],
+    "directRangeStart": [
+      null,
+      null
+    ],
+    "directRangeEnd": [
+      null,
+      null
+    ],
+    "specialRowIndex": [
+      null,
+      null
+    ],
+    "specialRowIndexIncrement": [
+      0,
+      0
+    ],
+    "fixedRangePKboolBDA": [
+      true,
+      true
+    ],
+    "specialRangePKBDA": [
+      52,
+      513
+    ],
+    "fixedRangePKboolBFE": [
+      false,
+      true
+    ],
+    "specialRangePKBFE": [
+      0,
+      83
+    ],
+    "destinationColumns": [
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D",
+          "isSummed": true
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "F",
+          "sourceSheetName": "Factores expansión_bosques",
+          "fixedCell": "C21"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "G",
+          "formula": "=(E{row}*(1+F{row}))"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "H",
+          "sourceSheetName": "Factores emisión",
+          "fixedCell": "B5"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": "=(D{row}*G{row}*H{row})",
+          "isSummed": true
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "J",
+          "formula": "=(I{row} * {factorEmisionB12})/1000",
+          "isSummed": true
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D",
+          "specialCondition": true,
+          "isSummed": true
+        },
+        {
+          "operationName": "workbookBFE",
+          "destinationColumn": "E",
+          "primaryKeyColumn": "N"
+        },
+        {
+          "operationName": "custom",
+          "destinationColumn": "F",
+          "sourceSheetName": "Factores expansión_bosques",
+          "cellsToExtract": [
+            "C22",
+            "C23",
+            "C25",
+            "C21"
+          ]
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "G",
+          "formula": "=(E{row}*(1+F{row}))"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "H",
+          "sourceSheetName": "Factores emisión",
+          "fixedCell": "B5"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": "=(D{row}*G{row}*H{row})",
+          "isSummed": true
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "J",
+          "formula": "=(I{row} * {factorEmisionB12})/1000",
+          "specialCondition": true,
+          "isSummed": true
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Pattern6",
+    "sheetIndex": 6,
+    "primaryKeySheetIndex": 6,
+    "primaryKeyColumn": "L",
+    "baseStartRow": 65,
+    "basePrimaryKeyStartRow": 65,
+    "startRowIncrement": 17,
+    "primaryKeyStartRowIncrement": 17,
+    "names": [
+      "sec1",
+      "sec2"
+    ],
+    "baseDataStartRowBDA": [
+      5,
+      3
+    ],
+    "baseDataStartRowBFE": [
+      6,
+      82
+    ],
+    "defaultRowGap": [
+      1
+    ],
+    "defaultTotalRows": [
+      1,
+      1
+    ],
+    "sourceWorkbook1Sheets": [
+      "Tierras FP_BN",
+      "BN convertido a PF"
+    ],
+    "sourceWorkbook2Sheets": [
+      "Biomasa Stock_BN",
+      "Biomasa Stock_BN"
+    ],
+    "sourceExtractColumns1Base": [
+      "D",
+      "F"
+    ],
+    "sourceExtractColumns2Base": [
+      "G",
+      "G"
+    ],
+    "useDirectRange": [
+      false,
+      false
+    ],
+    "directRangeStart": [
+      null,
+      null
+    ],
+    "directRangeEnd": [
+      null,
+      null
+    ],
+    "specialRowIndex": [
+      null,
+      null
+    ],
+    "specialRowIndexIncrement": [
+      0,
+      0
+    ],
+    "fixedRangePKboolBDA": [
+      true,
+      true
+    ],
+    "specialRangePKBDA": [
+      22,
+      20
+    ],
+    "fixedRangePKboolBFE": [
+      false,
+      true
+    ],
+    "specialRangePKBFE": [
+      0,
+      97
+    ],
+    "destinationColumns": [
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "G",
+          "sourceSheetName": "Factores emisión",
+          "fixedCell": "B5"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "H",
+          "formula": "=(E{row}-F{row})*D{row}*G{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": "=(H{row} * {factorEmisionB12})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "workbookBFE",
+          "destinationColumn": "F"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "G",
+          "sourceSheetName": "Factores emisión",
+          "fixedCell": "B5"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "H",
+          "formula": "=(E{row}-F{row})*D{row}*G{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": "=(H{row} * {factorEmisionB12})/1000"
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Pattern7",
+    "sheetIndex": 7,
+    "primaryKeySheetIndex": 7,
+    "primaryKeyColumn": "L",
+    "baseStartRow": 69,
+    "basePrimaryKeyStartRow": 69,
+    "startRowIncrement": 19,
+    "primaryKeyStartRowIncrement": 19,
+    "names": [
+      "sec1",
+      "sec2",
+      "sec3",
+      "sec4"
+    ],
+    "baseDataStartRowBDA": [
+      4,
+      33,
+      2,
+      598
+    ],
+    "baseDataStartRowBFE": [
+      0,
+      0,
+      54,
+      219
+    ],
+    "defaultRowGap": [
+      0,
+      1,
+      0,
+      0
+    ],
+    "defaultTotalRows": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "sourceWorkbook1Sheets": [
+      "Tierras FP_BN",
+      "Tierras FP_BN",
+      "BN convertido a PF",
+      "Tierras_transición_PF"
+    ],
+    "sourceWorkbook2Sheets": [
+      "DOM ",
+      "DOM ",
+      "DOM ",
+      "DOM "
+    ],
+    "sourceExtractColumns1Base": [
+      "D",
+      "D",
+      "F",
+      "G"
+    ],
+    "sourceExtractColumns2Base": [
+      "G",
+      "G",
+      "F",
+      "F"
+    ],
+    "fixedRangePKboolBDA": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "specialRangePKBDA": [
+      21,
+      51,
+      19,
+      694
+    ],
+    "fixedRangePKboolBFE": [
+      false,
+      false,
+      true,
+      true
+    ],
+    "specialRangePKBFE": [
+      0,
+      0,
+      69,
+      315
+    ],
+    "destinationColumns": [
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "G",
+          "manualValue": 1
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "H",
+          "formula": "=D{row}*(E{row}-F{row})/G{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": "=(H{row} * {factorEmisionB12})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "G",
+          "manualValue": 20
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "H",
+          "formula": "=D{row}*(E{row}-F{row})/G{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": "=(H{row} * {factorEmisionB12})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "workbookBFE",
+          "destinationColumn": "F"
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "G",
+          "manualValue": 1
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "H",
+          "formula": "=D{row}*(E{row}-F{row})/G{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": "=(H{row} * {factorEmisionB12})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "workbookBFE",
+          "destinationColumn": "E"
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "G",
+          "manualValue": 20
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "H",
+          "formula": "=D{row}*(E{row}-F{row})/G{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "I",
+          "formula": "=(H{row} * {factorEmisionB12})/1000"
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Pattern8",
+    "sheetIndex": 8,
+    "primaryKeySheetIndex": 8,
+    "primaryKeyColumn": "Q",
+    "baseStartRow": 61,
+    "basePrimaryKeyStartRow": 61,
+    "startRowIncrement": 16,
+    "primaryKeyStartRowIncrement": 16,
+    "names": [
+      "sec1",
+      "sec2"
+    ],
+    "baseDataStartRowBDA": [
+      33,
+      599
+    ],
+    "baseDataStartRowBFE": [
+      6,
+      82
+    ],
+    "defaultRowGap": [
+      1
+    ],
+    "defaultTotalRows": [
+      1,
+      1
+    ],
+    "sourceWorkbook1Sheets": [
+      "Tierras FP_BN",
+      "Tierras_transición_PF"
+    ],
+    "sourceWorkbook2Sheets": [
+      "Carbono del suelo",
+      "Carbono del suelo"
+    ],
+    "sourceExtractColumns1Base": [
+      "D",
+      "G"
+    ],
+    "sourceExtractColumns2Base": [
+      "G",
+      "G"
+    ],
+    "fixedRangePKboolBDA": [
+      true,
+      true
+    ],
+    "specialRangePKBDA": [
+      51,
+      694
+    ],
+    "destinationColumns": [
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "E",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "K{2}"
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "F",
+          "manualValue": 20
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "G",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "B45"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "H",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "C45"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "I",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "D45"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "J",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "E45"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "K",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "F45"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "L",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "G45"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "M",
+          "formula": "=((E{row}*G{row}*H{row}*I{row}*D{row})-(E{row}*J{row}*K{row}*L{row}*D{row}))/F{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "N",
+          "formula": "=(M{row} * {factorEmisionB12})/1000"
+        }
+      ],
+      [
+        {
+          "operationName": "workbookBDA",
+          "destinationColumn": "D"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "E",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "K{2}"
+        },
+        {
+          "operationName": "manualValue",
+          "destinationColumn": "F",
+          "manualValue": 20
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "G",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "E45"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "H",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "F45"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "I",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "G45"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "J",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "B45"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "K",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "C45"
+        },
+        {
+          "operationName": "fixed",
+          "destinationColumn": "L",
+          "sourceSheetName": "Carbono del suelo",
+          "fixedCell": "D45"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "M",
+          "formula": "=((E{row}*G{row}*H{row}*I{row}*D{row})-(E{row}*J{row}*K{row}*L{row}*D{row}))/F{row}"
+        },
+        {
+          "operationName": "formula",
+          "destinationColumn": "N",
+          "formula": "=(M{row} * {factorEmisionB12})/1000"
+        }
+      ]
+    ]
+  }
+]
