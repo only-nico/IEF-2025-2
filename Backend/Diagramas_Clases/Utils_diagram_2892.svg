@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="375px" preserveAspectRatio="none" style="width:385px;height:375px;" version="1.1" viewBox="0 0 385 375" width="385px" zoomAndPan="magnify"><defs><filter height="300%" id="f3kdmmgs7ps12" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[72b0185b822e13b1b3641dbab08284f8]
+class dataUtils_js--><rect fill="#8FBC8F" filter="url(#f3kdmmgs7ps12)" height="194.7891" id="dataUtils_js" style="stroke: #A80036; stroke-width: 1.5;" width="195" x="6" y="8"/><ellipse cx="63.25" cy="26.9688" fill="#DA70D6" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M58.9688,20.5781 L61.8906,20.5781 L63.3594,26.0156 L64.8281,20.5781 L67.7656,20.5781 L67.7656,32.9688 L65.6563,32.9688 L65.6563,23.0469 L64.3438,28.4688 L62.4063,28.4688 L61.0781,23.0469 L61.0781,32.9688 L58.9688,32.9688 L58.9688,20.5781 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="60" x="89.75" y="24.1387">«module»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="72" x="83.75" y="38.1074">dataUtils_js</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="200" y1="45.9375" y2="45.9375"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="35" x="12" y="60.1479">None?</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="99" x="12" y="72.9526">primaryKeyCache</text><line style="stroke: #A80036; stroke-width: 1.0;" x1="7" x2="200" y1="79.5469" y2="79.5469"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="119" x="12" y="93.7573">adjustColumnLetter()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="183" x="12" y="106.562">buildPrimaryKeyToRowMapping()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="141" x="12" y="119.3667">columnLetterToNumber()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="141" x="12" y="132.1714">columnNumberToLetter()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="158" x="12" y="144.9761">extractDataByPrimaryKeys()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="173" x="12" y="157.7808">extractDataUsingDirectRange()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="118" x="12" y="170.5854">extractPrimaryKeys()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="97" x="12" y="183.3901">getPrimaryKeys()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="85" x="12" y="196.1948">getRowToUse()</text><!--MD5=[69cc1a256d6d77c6f68ecd22b84d1749]
+class excelUtils_js--><rect fill="#8FBC8F" filter="url(#f3kdmmgs7ps12)" height="117.9609" id="excelUtils_js" style="stroke: #A80036; stroke-width: 1.5;" width="138" x="236.5" y="46.5"/><ellipse cx="265.45" cy="65.4688" fill="#DA70D6" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M261.1688,59.0781 L264.0906,59.0781 L265.5594,64.5156 L267.0281,59.0781 L269.9656,59.0781 L269.9656,71.4688 L267.8563,71.4688 L267.8563,61.5469 L266.5438,66.9688 L264.6063,66.9688 L263.2781,61.5469 L263.2781,71.4688 L261.1688,71.4688 L261.1688,59.0781 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="60" x="290.05" y="62.6387">«module»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="75" x="282.55" y="76.6074">excelUtils_js</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="237.5" x2="373.5" y1="84.4375" y2="84.4375"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="72" x="242.5" y="98.6479">XlsxPopulate</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="11" x="242.5" y="111.4526">fs</text><line style="stroke: #A80036; stroke-width: 1.0;" x1="237.5" x2="373.5" y1="118.0469" y2="118.0469"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="126" x="242.5" y="132.2573">columnLetterToIndex()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="94" x="242.5" y="145.062">normalizeValue()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="106" x="242.5" y="157.8667">verifySheetExists()</text><!--MD5=[e8db2a6eb37941884e1e4dcbbf73aece]
+class patternUtils_js--><rect fill="#8FBC8F" filter="url(#f3kdmmgs7ps12)" height="79.5469" id="patternUtils_js" style="stroke: #A80036; stroke-width: 1.5;" width="123" x="42" y="263"/><ellipse cx="57.45" cy="281.9688" fill="#DA70D6" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M53.1688,275.5781 L56.0906,275.5781 L57.5594,281.0156 L59.0281,275.5781 L61.9656,275.5781 L61.9656,287.9688 L59.8563,287.9688 L59.8563,278.0469 L58.5438,283.4688 L56.6063,283.4688 L55.2781,278.0469 L55.2781,287.9688 L53.1688,287.9688 L53.1688,275.5781 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="60" x="86.55" y="279.1387">«module»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="90" x="71.55" y="293.1074">patternUtils_js</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="43" x2="164" y1="300.9375" y2="300.9375"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="43" x2="164" y1="308.9375" y2="308.9375"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="107" x="48" y="323.1479">createOperations()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="111" x="48" y="335.9526">generateRegiones()</text><!--MD5=[cdc4338562689ee5e30053b7c2f6051f]
+class presentacionUtils_js--><rect fill="#8FBC8F" filter="url(#f3kdmmgs7ps12)" height="66.7422" id="presentacionUtils_js" style="stroke: #A80036; stroke-width: 1.5;" width="158" x="200.5" y="269.5"/><ellipse cx="215.5" cy="288.4688" fill="#DA70D6" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M211.2188,282.0781 L214.1406,282.0781 L215.6094,287.5156 L217.0781,282.0781 L220.0156,282.0781 L220.0156,294.4688 L217.9063,294.4688 L217.9063,284.5469 L216.5938,289.9688 L214.6563,289.9688 L213.3281,284.5469 L213.3281,294.4688 L211.2188,294.4688 L211.2188,282.0781 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="60" x="262.5" y="285.6387">«module»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="126" x="229.5" y="299.6074">presentacionUtils_js</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="201.5" x2="357.5" y1="307.4375" y2="307.4375"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="201.5" x2="357.5" y1="315.4375" y2="315.4375"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="71" x="206.5" y="329.6479">setFileYear()</text><!--MD5=[bbd6ca1984b80a81a6b76d26b25f14c4]
+link dataUtils_js to excelUtils_js--><!--MD5=[930c475944adbe0e024f2f1d9ae95a40]
+link dataUtils_js to patternUtils_js--><!--MD5=[d0c592c8f24d40714b25a3bedce1b78b]
+link patternUtils_js to presentacionUtils_js--><text fill="#888888" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="188" x="102.5" y="362.2822">Generated by GitUml www.gituml.com</text><!--MD5=[94a8d43ee51dc960d3cb63831fbb82fe]
+@startuml
+class dataUtils_js <<module>> << (M,orchid) >> #DarkSeaGreen {
+    None?
+    primaryKeyCache
+    - - -
+    adjustColumnLetter()
+    buildPrimaryKeyToRowMapping()
+    columnLetterToNumber()
+    columnNumberToLetter()
+    extractDataByPrimaryKeys()
+    extractDataUsingDirectRange()
+    extractPrimaryKeys()
+    getPrimaryKeys()
+    getRowToUse()
+}
+class excelUtils_js <<module>> << (M,orchid) >> #DarkSeaGreen {
+    XlsxPopulate
+    fs
+    - - -
+    columnLetterToIndex()
+    normalizeValue()
+    verifySheetExists()
+}
+class patternUtils_js <<module>> << (M,orchid) >> #DarkSeaGreen {
+    - - -
+    createOperations()
+    generateRegiones()
+}
+class presentacionUtils_js <<module>> << (M,orchid) >> #DarkSeaGreen {
+    - - -
+    setFileYear()
+}
+center footer Generated by GitUml www.gituml.com
+hide empty members
+@enduml
+
+PlantUML version 1.2020.08(Sun Apr 26 14:08:22 UTC 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 1.8.0_402-heroku-b06
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
