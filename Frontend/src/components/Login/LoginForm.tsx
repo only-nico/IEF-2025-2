@@ -70,7 +70,7 @@ const LoginForm: React.FC = () => {
             className="block text-gray-700 text-sm font-medium mb-2"
             htmlFor="password"
           >
-            Contraseña
+            clave
           </label>
           <input
             className="shadow-sm border rounded-lg w-full py-2 px-4 text-gray-700 focus:ring focus:ring-blue-300"

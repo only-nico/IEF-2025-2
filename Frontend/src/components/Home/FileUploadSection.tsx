@@ -238,11 +238,16 @@ const FileUploadSection: React.FC<FileUploadSectionProps> = React.memo(({
             <p className="bg-navegator font-semibold rounded-xl p-2 pl-4 pr-4">
               Archivo: {file.name}
             </p>
-            <button onClick={handleUploadWrapper} className="text-black pt-2 rounded-xl">
-              <p className="mt-2 cursor-pointer inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-[#F0EAD6] bg-[#2F4F4F] hover:bg-[#3D6F6F] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#2F4F4F]">
-                Subir
-              </p>
-            </button>
+            <button
+            id="upload-button"  // Agregado un ID único al botón
+            onClick={handleUploadWrapper}
+            className="text-black pt-2 rounded-xl"
+          >
+            <p className="mt-2 cursor-pointer inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-[#F0EAD6] bg-[#2F4F4F] hover:bg-[#3D6F6F] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#2F4F4F]">
+              Subir
+            </p>
+        </button>
+
           </div>
         ) : (
           <div className="text-center">

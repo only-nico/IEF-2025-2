@@ -25,12 +25,12 @@ const Home: React.FC = () => {
     try {
       const files = await fetchFiles();
       if (Array.isArray(files)) {
-        const formattedFiles = files.map((file, index) => ({
-          id: index.toString(),
-          name: typeof file === 'string' ? file : file.name,
-          type: typeof file === 'string' && file.toLowerCase().includes('bda') ? 'BDA' : 'BFE',
-          date: new Date().toISOString().split('T')[0]
-        }));
+         const formattedFiles = files.map((fileName: string, index: number) => ({
+             id: index.toString(),
+             name: fileName,
+             type: fileName.toLowerCase().includes('bda') ? 'BDA' : 'BFE',
+             date: new Date().toISOString().split('T')[0]
+           }));
         setFileHistory(formattedFiles);
       } else {
         console.error('Fetched files is not an array:', files);
@@ -161,11 +161,7 @@ const Home: React.FC = () => {
           </div>
 
           <div className="mt-8">
-            <FileTable
-              fileHistory={fileHistory}
-              downloadFile={(fileName) => showAlert(`Descargando el archivo "${fileName}".`, 'success')}
-              deleteFile={(fileName) => showAlert(`Eliminando el archivo "${fileName}".`, 'success')}
-            />
+            <FileTable />
           </div>
         </div>
       </main>

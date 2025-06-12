@@ -1,10 +1,22 @@
+// src /components/home/FileTable.tsx
 import React, { useState, useEffect, useCallback } from 'react';
 import { Trash2, Download } from 'lucide-react';
-import { fetchFilesFromServer, deleteFileFromServer, downloadFileFromServer } from '../../api/uploadpage/UploadPage';
+import {
+  fetchFilesFromServer,
+  deleteFileFromServer,
+  downloadFileFromServer,
+  type FileInfo
+} from '../../api/uploadpage/UploadPage';
 
+// Este tipo describe la forma que FileTable manejará internamente
 interface FileItem {
   name: string;
-  createdAt: string;
+  date: string; // fecha formateada o raw de FileInfo.createdAt
+}
+
+interface AlertProps {
+  message: string;
+  type: 'success' | 'error';
 }
 
 interface FileRowProps {
@@ -13,26 +25,25 @@ interface FileRowProps {
   onFileDeleted: () => void;
 }
 
-interface AlertProps {
-  message: string;
-  type: 'success' | 'error';
-}
-
 const Alert: React.FC<AlertProps> = ({ message, type }) => (
-  <div className={`fixed top-4 left-1/2 transform -translate-x-1/2 p-4 rounded-lg shadow-lg z-50 ${
-    type === 'success' ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'
-  }`}>
+  <div
+    className={`fixed top-4 left-1/2 transform -translate-x-1/2 p-4 rounded-lg shadow-lg z-50 ${
+      type === 'success' ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'
+    }`}
+  >
     {message}
   </div>
 );
 
 const FileRow: React.FC<FileRowProps> = ({ file, onShowAlert, onFileDeleted }) => {
-  const fileName = file.name;
-  const fileType = file.name.toLowerCase().includes('bda') ? 'BDA' : file.name.toLowerCase().includes('bfe') ? 'BFE' : null;
+  const { name: fileName, date } = file;
+  const fileType = fileName.toLowerCase().includes('bda')
+    ? 'BDA'
+    : fileName.toLowerCase().includes('bfe')
+    ? 'BFE'
+    : null;
 
-  if (!fileType) {
-    return null;
-  }
+  if (!fileType) return null;
 
   const handleDelete = async () => {
     try {
@@ -43,7 +54,7 @@ const FileRow: React.FC<FileRowProps> = ({ file, onShowAlert, onFileDeleted }) =
       } else {
         onShowAlert(`No se pudo eliminar el archivo "${fileName}".`, 'error');
       }
-    } catch (error) {
+    } catch {
       onShowAlert(`Error al eliminar el archivo "${fileName}".`, 'error');
     }
   };
@@ -52,12 +63,13 @@ const FileRow: React.FC<FileRowProps> = ({ file, onShowAlert, onFileDeleted }) =
     try {
       downloadFileFromServer(fileName);
       onShowAlert(`Descargando el archivo "${fileName}".`, 'success');
-    } catch (error) {
+    } catch {
       onShowAlert(`Error al descargar el archivo "${fileName}".`, 'error');
     }
   };
 
-  const formattedDate = new Date(file.createdAt).toLocaleDateString('es-ES', {
+  // Formatear la fecha proveniente de FileInfo.createdAt
+  const formattedDate = new Date(date).toLocaleDateString('es-ES', {
     day: '2-digit',
     month: '2-digit',
     year: 'numeric',
@@ -104,110 +116,75 @@ const FileTable: React.FC = () => {
 
   const showAlert = (message: string, type: 'success' | 'error') => {
     setAlert({ message, type });
-    setTimeout(() => {
-      setAlert(null);
-    }, 5000);
+    setTimeout(() => setAlert(null), 5000);
   };
 
+  // Convertir FileInfo[] a FileItem[] incluyendo 'date'
   const fetchFiles = useCallback(async () => {
     try {
-      const fetchedFiles = await fetchFilesFromServer();
-      
-      // Comparar si hay nuevos archivos
-      const currentFileNames = new Set(files.map(f => f.name));
-      const newFiles = fetchedFiles.filter(f => !currentFileNames.has(f.name));
-      
-      if (newFiles.length > 0) {
-        setFiles(fetchedFiles);
-        setLastUpdate(new Date());
-      } else {
-        // Si no hay archivos nuevos, actualizar silenciosamente
-        setFiles(fetchedFiles);
-      }
+      const fetched: FileInfo[] = await fetchFilesFromServer();
+      const mapped: FileItem[] = fetched.map(f => ({
+        name: f.name,
+        date: f.createdAt || new Date().toISOString()
+      }));
+      setFiles(mapped);
+      setLastUpdate(new Date());
     } catch (error) {
       console.error('Error fetching files:', error);
     }
-  }, [files]);
-
-  // Efecto inicial para cargar archivos
-  useEffect(() => {
-    const initialFetch = async () => {
-      setLoading(true);
-      try {
-        await fetchFiles();
-      } finally {
-        setLoading(false);
-      }
-    };
-    initialFetch();
   }, []);
 
-  // Efecto para actualización periódica
   useEffect(() => {
-    const intervalId = setInterval(() => {
-      fetchFiles();
-    }, 5000); // Actualizar cada 5 segundos
-
-    return () => clearInterval(intervalId);
+    setLoading(true);
+    fetchFiles().finally(() => setLoading(false));
   }, [fetchFiles]);
 
-  const sortedFileHistory = React.useMemo(() => {
-    const filteredFiles = files.filter(file =>
-      file.name.toLowerCase().includes('bda') || file.name.toLowerCase().includes('bfe')
-    );
-
-    return [...filteredFiles]
-      .sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime())
-      .slice(0, 3);
-  }, [files]);
+  useEffect(() => {
+    const intervalId = setInterval(fetchFiles, 5000);
+    return () => clearInterval(intervalId);
+  }, [fetchFiles]);
 
   return (
     <div className="mt-8 bg-[#F0EAD6] shadow overflow-hidden sm:rounded-lg">
       {alert && <Alert message={alert.message} type={alert.type} />}
       <div className="px-4 py-5 sm:p-6">
         <h3 className="text-lg leading-6 font-medium text-[#2F4F4F] mb-4">
-          Últimos Archivos Subidos
+          Últimos Archivos Subidos (Última actualización: {lastUpdate.toLocaleTimeString()})
         </h3>
-        <div className="overflow-x-auto">
-          {loading ? (
-            <div className="text-center py-6 text-[#2F4F4F]">
-              <p className="text-sm font-medium">Cargando archivos...</p>
-            </div>
-          ) : sortedFileHistory.length > 0 ? (
-            <table className="min-w-full divide-y divide-[#2F4F4F]">
-              <thead className="bg-[#F0EAD6]">
-                <tr>
-                  <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-[#2F4F4F] uppercase tracking-wider">
-                    Nombre
-                  </th>
-                  <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-[#2F4F4F] uppercase tracking-wider">
-                    Tipo
-                  </th>
-                  <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-[#2F4F4F] uppercase tracking-wider">
-                    Fecha
-                  </th>
-                  <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-[#2F4F4F] uppercase tracking-wider">
-                    Acciones
-                  </th>
-                </tr>
-              </thead>
-              <tbody className="bg-[#F0EAD6] divide-y divide-[#2F4F4F]">
-                {sortedFileHistory.map((file) => (
-                  <FileRow
-                    key={file.name}
-                    file={file}
-                    onShowAlert={showAlert}
-                    onFileDeleted={fetchFiles}
-                  />
-                ))}
-              </tbody>
-            </table>
-          ) : (
-            <div className="text-center py-6 text-[#2F4F4F]">
-              <p className="text-sm font-medium">No hay archivos subidos todavía.</p>
-            </div>
-          )}
-        </div>
+        {loading ? (
+          <div className="text-center py-6 text-[#2F4F4F]">
+            <p className="text-sm font-medium">Cargando archivos...</p>
+          </div>
+        ) : (
+          <table className="min-w-full divide-y divide-[#2F4F4F]">
+            <thead className="bg-[#F0EAD6]">
+              <tr>
+                <th className="px-6 py-3 text-left text-xs font-medium text-[#2F4F4F] uppercase tracking-wider">
+                  Nombre
+                </th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-[#2F4F4F] uppercase tracking-wider">
+                  Tipo
+                </th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-[#2F4F4F] uppercase tracking-wider">
+                  Fecha
+                </th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-[#2F4F4F] uppercase tracking-wider">
+                  Acciones
+                </th>
+              </tr>
+            </thead>
+            <tbody className="bg-[#F0EAD6] divide-y divide-[#2F4F4F]">
+              {files.map(file => (
+                <FileRow
+                  key={file.name}
+                  file={file}
+                  onShowAlert={showAlert}
+                  onFileDeleted={fetchFiles}
+                />
+              ))}
+            </tbody>
+          </table>
+        )}
       </div>
     </div>
   );
