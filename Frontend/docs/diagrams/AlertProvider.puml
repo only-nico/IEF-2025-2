@@ -1,0 +1,6 @@
+@startuml
+class AlertProvider {
+  +children
+}
+AlertProvider --> ErrorAlert
+@enduml

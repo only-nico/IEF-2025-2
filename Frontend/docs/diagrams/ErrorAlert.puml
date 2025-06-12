@@ -1,0 +1,7 @@
+@startuml
+class ErrorAlert {
+  +message
+  +onClose
+  +type
+}
+@enduml

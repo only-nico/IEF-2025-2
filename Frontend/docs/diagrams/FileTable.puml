@@ -1,0 +1,5 @@
+@startuml
+class FileTable {
+}
+FileTable --> UploadPage
+@enduml

@@ -1,0 +1,5 @@
+@startuml
+class fileHandlers {
+}
+fileHandlers --> FileUploadSections
+@enduml

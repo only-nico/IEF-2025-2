@@ -1,0 +1,11 @@
+@startuml
+class FileUploadSection {
+}
+FileUploadSection --> ErrorAlert
+FileUploadSection --> FileUploadSections
+FileUploadSection --> basura.svg
+FileUploadSection --> descarga.svg
+FileUploadSection --> fileHandlers
+FileUploadSection --> ojo.svg
+FileUploadSection --> useExcelSheets
+@enduml

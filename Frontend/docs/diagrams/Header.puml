@@ -1,0 +1,10 @@
+@startuml
+class Header {
+  +handleLogout
+  +isLoggingOut
+  +profilePic
+}
+Header --> logo-infor.png
+Header --> logo_uach.svg
+Header --> perfil_photo.png
+@enduml
