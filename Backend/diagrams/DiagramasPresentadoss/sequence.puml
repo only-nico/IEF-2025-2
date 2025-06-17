@@ -1,0 +1,7 @@
+@startuml
+autonumber
+Participant1 -> Participant2: listFiles
+Participant2 --> Participant1: return
+Participant1 -> Participant2: listFiles
+Participant2 --> Participant1: return
+@enduml
