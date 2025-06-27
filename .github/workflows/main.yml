@@ -31,7 +31,7 @@ jobs:
     - name: Run Chronium test
       working-directory: Pruebas_Automatizadas
       run: |
-        node login.js
+        node login_correcto.js
 
     - name: Stop containers
       working-directory: IEF-2025-2
