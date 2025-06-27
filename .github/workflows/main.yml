@@ -33,8 +33,7 @@ jobs:
 
     - name: Install Playwright browsers
       working-directory: Pruebas_Automatizadas
-      run: sudo ./node_modules/.bin/playwright install
-
+      run: npx playwright install
 
     - name: Run Chromium test
       working-directory: Pruebas_Automatizadas
