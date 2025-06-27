@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -18,21 +19,32 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: '20' # O la versión que necesites (por ejemplo, '18', '16', etc.)
-
+        node-version: '20'
 
     - name: Build docker-compose services
-      working-directory: .
       run: docker compose up -d --build
 
     - name: Wait for services to initialize
       run: sleep 10
 
-    - name: Run Chronium test
+    - name: Install dependencies for automated tests
       working-directory: Pruebas_Automatizadas
-      run: |
-        node login_correcto.js
+      run: npm install
+    
+    - name: List bin directory (debug)
+      working-directory: Pruebas_Automatizadas
+      run: ls -l node_modules/.bin
+    - name: Fix playwright permissions
+      working-directory: Pruebas_Automatizadas
+      run: chmod +x ./node_modules/.bin/playwright
+      
+    - name: Install Playwright browsers
+      working-directory: Pruebas_Automatizadas
+      run: ./node_modules/.bin/playwright install chromium
+    
+    - name: Run Chromium test
+      working-directory: Pruebas_Automatizadas
+      run: node login_correcto.js
 
     - name: Stop containers
-      working-directory: IEF-2025-2
       run: docker compose down
