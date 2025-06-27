@@ -33,7 +33,8 @@ jobs:
 
     - name: Install Playwright browsers
       working-directory: Pruebas_Automatizadas
-      run: npx playwright install
+      run: npx playwright install chromium
+
 
     - name: Run Chromium test
       working-directory: Pruebas_Automatizadas
