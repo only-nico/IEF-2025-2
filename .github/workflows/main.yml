@@ -1,0 +1,38 @@
+name: Build and Test Docker App
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20' # O la versión que necesites (por ejemplo, '18', '16', etc.)
+
+
+    - name: Build docker-compose services
+      working-directory: IEF-2025-2
+      run: docker compose up -d --build
+
+    - name: Wait for services to initialize
+      run: sleep 10
+
+    - name: Run Chronium test
+      working-directory: Pruebas_Automatizadas
+      run: |
+        node login.js
+
+    - name: Stop containers
+      working-directory: IEF-2025-2
+      run: docker compose down
