@@ -2,7 +2,7 @@
 const { chromium } = require('playwright');  // o 'firefox' o 'webkit'
 
 (async () => {
-  const browser = await chromium.launch({ headless: false });  // `headless: false` para ver el navegador
+  const browser = await chromium.launch({ headless: true });  // `headless: false` para ver el navegador
   const page = await browser.newPage();
   
   // Navegar a la página de login
