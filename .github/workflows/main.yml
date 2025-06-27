@@ -33,6 +33,11 @@ jobs:
 
     - name: Install Playwright browsers
       working-directory: Pruebas_Automatizadas
-      run: npx playwright install
+      run: |
+        npx playwright install
+        node login_correcto.js
 
-    - name: Run
+    - name: Stop containers
+      working-directory: gestion-app
+      run: docker compose down
+
