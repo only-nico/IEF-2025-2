@@ -30,12 +30,15 @@ jobs:
     - name: Install dependencies for automated tests
       working-directory: Pruebas_Automatizadas
       run: npm install
-
+    
+    - name: List bin directory (debug)
+      working-directory: Pruebas_Automatizadas
+      run: ls -l node_modules/.bin
+    
     - name: Install Playwright browsers
       working-directory: Pruebas_Automatizadas
-      run: npx playwright install chromium
-
-
+      run: ./node_modules/.bin/playwright install chromium
+    
     - name: Run Chromium test
       working-directory: Pruebas_Automatizadas
       run: node login_correcto.js
