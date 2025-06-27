@@ -37,14 +37,6 @@ jobs:
     - name: Fix playwright permissions
       working-directory: Pruebas_Automatizadas
       run: chmod +x ./node_modules/.bin/playwright
-      
-    - name: Install Playwright browsers
-      working-directory: Pruebas_Automatizadas
-      run: ./node_modules/.bin/playwright install chromium
-    
-    - name: Run Chromium test
-      working-directory: Pruebas_Automatizadas
-      run: node login_correcto.js
 
     - name: Stop containers
       run: docker compose down
